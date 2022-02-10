@@ -1,0 +1,76 @@
+{
+  "name": "dphelper",
+  "version": "0.2.42",
+  "description": "DevToolSets",
+  "main": "index.js",
+  "targets": {
+    "main": {
+      "includeNodeModules": {
+        "react": false,
+        "react-dom": false
+      },
+      "isLibrary": true
+    }
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passariello/dpHelper",
+    "help": "https://github.com/passariello/dpHelper#readme"
+  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://www.paypal.com/donate/?business=HC7LJ2ZXRRNDL&no_recurring=0&item_name=I+am+a+software+developer.+Just+a+donation+can+help+me+to+have+more+time+to+dedicate+on+this+project&currency_code=CAD"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/passariello"
+    }
+  ],
+  "eslintConfig": {
+    "globals": {
+      "window": true
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/passariello/dpHelper/issues"
+  },
+  "homepage": "https://github.com/passariello/dpHelper",
+  "keywords": [
+    "utils",
+    "tools",
+    "uuid",
+    "random",
+    "window",
+    "store",
+    "easy",
+    "pro",
+    "powerful",
+    "passariello"
+  ],
+  "author": {
+    "name": "Dario Passariello",
+    "website": "https://dario.passariello.ca",
+    "email": "dariopassariello@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "require": "^2.4.20"
+  },
+  "contributors": [
+    {
+      "name": "Dario Passariello",
+      "email": "dariopassariello@gmail.com"
+    },
+    {
+      "name": "Valeria Cala Scaglitta",
+      "email": "valeriacalascaglitta@gmail.com"
+    }
+  ]
+}
+
