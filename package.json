@@ -1,7 +1,16 @@
 {
   "name": "dphelper",
-  "version": "0.2.44",
-  "description": "DevToolSets",
+  "version": "0.2.51",
+  "description": "Developer Tools",
+  "deprecated": false,
+  "appCode": "dphelper",
+  "appCodeRelease": "dphelper",
+  "appName": "dphelper",
+  "appType": "beta",
+  "appFolder": "/",
+  "appAPI": "api",
+  "apiDev": "",
+  "apiProd": "",
   "main": "index.js",
   "targets": {
     "main": {
@@ -12,34 +21,36 @@
       "isLibrary": true
     }
   },
-  "deprecated": false,
   "engines": {
     "node": ">=0.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/passariello/dpHelper",
-    "help": "https://github.com/passariello/dpHelper#readme"
+  "scripts": {
+    "make-dist": "webpack --progress --color --mode production --config webpack.config.js",
+    "git": "git add . && git commit -m \"(fix|patch)\" && git pull && git push --all",
+    "git-tags": "git push --tags",
+    "backup": "backup.bat",
+    "publish": "cd public && npm version patch --force && cd .. && npm version patch --force && webpack --progress --color --mode production --config webpack.config.js && npm run git && cd dist && npm publish"
   },
-  "funding": [
-    {
-      "type": "individual",
-      "url": "https://www.paypal.com/donate/?business=HC7LJ2ZXRRNDL&no_recurring=0&item_name=I+am+a+software+developer.+Just+a+donation+can+help+me+to+have+more+time+to+dedicate+on+this+project&currency_code=CAD"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/passariello"
-    }
-  ],
   "eslintConfig": {
     "globals": {
       "window": true
     }
   },
-  "bugs": {
-    "url": "https://github.com/passariello/dpHelper/issues"
+  "author": {
+    "name": "Dario Passariello",
+    "website": "https://dario.passariello.ca",
+    "email": "dariopassariello@gmail.com"
   },
-  "homepage": "https://github.com/passariello/dpHelper",
+  "contributors": [
+    {
+      "name": "Dario Passariello",
+      "email": "dariopassariello@gmail.com"
+    },
+    {
+      "name": "Valeria Cala Scaglitta",
+      "email": "valeriacalascaglitta@gmail.com"
+    }
+  ],
   "keywords": [
     "utils",
     "tools",
@@ -52,24 +63,65 @@
     "powerful",
     "passariello"
   ],
-  "author": {
-    "name": "Dario Passariello",
-    "website": "https://dario.passariello.ca",
-    "email": "dariopassariello@gmail.com"
-  },
   "license": "Apache-2.0",
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "require": "^2.4.20"
-  },
-  "contributors": [
+  "homepage": "https://github.com/passariello/dphelper",
+  "funding": [
     {
-      "name": "Dario Passariello",
-      "email": "dariopassariello@gmail.com"
+      "type": "individual",
+      "url": "https://www.paypal.com/donate/?business=HC7LJ2ZXRRNDL&no_recurring=0&item_name=I+am+a+software+developer.+Just+a+donation+can+help+me+to+have+more+time+to+dedicate+on+this+project&currency_code=CAD"
     },
     {
-      "name": "Valeria Cala Scaglitta",
-      "email": "valeriacalascaglitta@gmail.com"
+      "type": "patreon",
+      "url": "https://www.patreon.com/passariello"
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passariello/dpHelper",
+    "help": "https://github.com/passariello/dpHelper#readme"
+  },
+  "bugs": {
+    "url": "https://github.com/passariello/dpHelper/issues"
+  },
+  "devDependencies": {
+    "css-loader": "6.7.1",
+    "eslint": "8.10.0",
+    "file-loader": "6.2.0",
+    "jest": "27.5.1",
+    "less-loader": "10.2.0",
+    "sass-loader": "12.6.0",
+    "style-loader": "3.3.1",
+    "webpack-cli": "4.9.2"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/plugin-transform-runtime": "7.17.0",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "8.2.3",
+    "classnames": "2.3.1",
+    "compression-webpack-plugin": "9.2.0",
+    "concurrently": "7.0.0",
+    "copy-webpack-plugin": "10.2.4",
+    "css": "3.0.0",
+    "dotenv": "16.0.0",
+    "fs": "0.0.1-security",
+    "html-webpack-plugin": "5.5.0",
+    "jquery": "3.6.0",
+    "jsdom-worker": "0.2.1",
+    "jshint": "^2.13.4",
+    "less": "4.1.2",
+    "path": "0.12.7",
+    "progress-bar-webpack-plugin": "2.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "require": "2.4.20",
+    "sass": "1.49.9",
+    "ts-jest": "27.1.3",
+    "tslint": "6.1.3",
+    "webpack": "5.70.0"
+  }
 }
