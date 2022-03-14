@@ -10,6 +10,12 @@
  */
 
 /*!
+ * dpHelper <https://github.com/passariello/dpHelper>
+ * Copyright (c) 2021, Dario Passariello.
+ * Licensed under the Apache-2.0 License.
+ */
+
+/*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
  *
