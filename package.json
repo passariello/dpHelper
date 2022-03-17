@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "0.2.68",
+  "version": "0.2.69",
   "description": "Developer Tools",
   "deprecated": false,
   "appCode": "dphelper",
@@ -29,7 +29,7 @@
     "git": "git add . && git commit -m \"(fix|patch)\" && git pull && git push --all",
     "git-tags": "git push --tags",
     "backup": "backup.bat",
-    "goLive": "cli-confirm \"Do you want go live?\" && npm version patch --force && webpack --progress --color --mode production --config webpack.config.js && npm run git && cd dist && npm publish"
+    "goLive": "cli-confirm \"Do you want go live?\" && npm version patch --force && webpack --progress --color --mode production --config webpack.config.js && cd dist && npm publish"
   },
   "eslintConfig": {
     "globals": {
@@ -85,7 +85,7 @@
   },
   "devDependencies": {
     "css-loader": "6.7.1",
-    "eslint": "8.11.0",
+    "eslint": "8.10.0",
     "file-loader": "6.2.0",
     "jest": "27.5.1",
     "less-loader": "10.2.0",
