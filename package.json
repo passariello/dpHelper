@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "0.2.69",
+  "version": "0.2.78",
   "description": "Developer Tools",
   "deprecated": false,
   "appCode": "dphelper",
@@ -8,6 +8,7 @@
   "appName": "dphelper",
   "appType": "beta",
   "appFolder": "/",
+  "appPort": "",
   "appAPI": "api",
   "apiDev": "",
   "apiProd": "",
@@ -26,10 +27,10 @@
   },
   "scripts": {
     "make-dist": "webpack --progress --color --mode production --config webpack.config.js",
-    "git": "git add . && git commit -m \"(fix|patch)\" && git pull && git push --all",
-    "git-tags": "git push --tags",
+    "git": "cd node && node gitDeploy",
+    "git-tag": "cd node && node createTag",
     "backup": "backup.bat",
-    "goLive": "cli-confirm \"Do you want go live?\" && npm version patch --force && webpack --progress --color --mode production --config webpack.config.js && cd dist && npm publish"
+    "goLive": "cd node && node goLive"
   },
   "eslintConfig": {
     "globals": {
@@ -85,7 +86,7 @@
   },
   "devDependencies": {
     "css-loader": "6.7.1",
-    "eslint": "8.10.0",
+    "eslint": "8.12.0",
     "file-loader": "6.2.0",
     "jest": "27.5.1",
     "less-loader": "10.2.0",
@@ -100,9 +101,11 @@
     "@babel/preset-react": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
     "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/user-event": "^13.5.0",
-    "babel-loader": "8.2.3",
+    "@testing-library/user-event": "^14.0.0",
+    "babel-loader": "8.2.4",
+    "child_process": "1.0.2",
     "classnames": "2.3.1",
+    "cli-confirm": "1.0.1",
     "compression-webpack-plugin": "9.2.0",
     "concurrently": "7.0.0",
     "copy-webpack-plugin": "10.2.4",
@@ -114,13 +117,14 @@
     "jsdom-worker": "0.2.1",
     "jshint": "^2.13.4",
     "less": "4.1.2",
+    "moment": "2.29.1",
     "path": "0.12.7",
     "progress-bar-webpack-plugin": "2.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
     "require": "2.4.20",
     "sass": "1.49.9",
-    "ts-jest": "27.1.3",
+    "ts-jest": "27.1.4",
     "tslint": "6.1.3",
     "webpack": "5.70.0"
   }
