@@ -86,7 +86,7 @@
   },
   "devDependencies": {
     "css-loader": "6.7.1",
-    "eslint": "8.14.0",
+    "eslint": "8.16.0",
     "file-loader": "6.2.0",
     "jest": "27.5.1",
     "less-loader": "10.2.0",
@@ -107,7 +107,7 @@
     "classnames": "2.3.1",
     "cli-confirm": "1.0.1",
     "compression-webpack-plugin": "9.2.0",
-    "concurrently": "7.1.0",
+    "concurrently": "7.2.1",
     "copy-webpack-plugin": "10.2.4",
     "css": "3.0.0",
     "dotenv": "16.0.0",
@@ -123,7 +123,7 @@
     "react": "18.1.0",
     "react-dom": "18.0.0",
     "require": "2.4.20",
-    "sass": "1.50.0",
+    "sass": "1.52.1",
     "ts-jest": "27.1.4",
     "tslint": "6.1.3",
     "webpack": "5.72.0"
