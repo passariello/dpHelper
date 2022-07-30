@@ -92,7 +92,7 @@
     "less-loader": "10.2.0",
     "sass-loader": "12.6.0",
     "style-loader": "3.3.1",
-    "webpack-cli": "4.9.2"
+    "webpack-cli": "4.10.0"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.18.6",
