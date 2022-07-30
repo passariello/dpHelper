@@ -92,7 +92,7 @@
     "less-loader": "10.2.0",
     "sass-loader": "12.6.0",
     "style-loader": "3.3.1",
-    "webpack-cli": "4.9.2"
+    "webpack-cli": "4.10.0"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.16.7",
@@ -111,7 +111,7 @@
     "copy-webpack-plugin": "10.2.4",
     "css": "3.0.0",
     "dotenv": "16.0.0",
-    "fs": "0.0.1-security",
+    "fs": "0.0.2",
     "html-webpack-plugin": "5.5.0",
     "jquery": "3.6.0",
     "jsdom-worker": "0.2.1",
