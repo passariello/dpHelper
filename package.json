@@ -107,7 +107,7 @@
     "classnames": "2.3.1",
     "cli-confirm": "1.0.1",
     "compression-webpack-plugin": "9.2.0",
-    "concurrently": "7.2.2",
+    "concurrently": "7.5.0",
     "copy-webpack-plugin": "10.2.4",
     "css": "3.0.0",
     "dotenv": "16.0.0",
