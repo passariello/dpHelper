@@ -34,6 +34,12 @@ or update:
 npm i dphelper@latest
 ```
 
+## using CDN
+
+```bash
+https://cdn.skypack.dev/dphelper@latest
+```
+
 in the index (and only there):
 
 ```javascript
