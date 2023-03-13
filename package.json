@@ -181,7 +181,7 @@
 		"cordova-android": "^11.0.0",
 		"css-loader": "^6.7.3",
 		"dotenv": "^16.0.3",
-		"eslint": "8.31.0",
+		"eslint": "8.36.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-import-resolver-webpack": "^0.13.2",
 		"eslint-plugin-import": "2.26.0",
