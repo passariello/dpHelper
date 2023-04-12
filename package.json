@@ -1,7 +1,50 @@
 {
 	"name": "dphelper",
-	"version": "0.2.102",
-	"description": "Developer Tools by Dario Passariello",
+	"displayName": "dphelper",
+	"version": "0.2.107",
+	"description": "dphelper devtools | tools, store and state management brave developers",
+	"copyright": "Dario Passariello",
+	"deprecated": false,
+	"homepage": "https://github.com/passariello/dphelper",
+	"targets": "web",
+	"main": "index.tsx",
+	"author": {
+		"name": "Dario Passariello",
+		"url": "https://github.com/passariello/",
+		"email": "dariopassariello@gmail.com"
+	},
+	"support": {
+		"name": "Dario Passariello",
+		"url": "https://github.com/passariello/",
+		"email": "dariopassariello@gmail.com"
+	},
+	"company": {},
+	"contributors": [
+		{
+			"name": "Valeria Cala Scaglitta",
+			"email": "valeriacalascaglitta@gmail.com"
+		}
+	],
+	"workspaces": [
+		"mcp"
+	],
+	"PROJECTS": {
+		"LAYERPRO": {
+			"API": {
+				"DIR": "/api/",
+				"LOCAL": "//api.biglogic.ca",
+				"PROD": "//api.biglogic.ca",
+				"DEV": "//api.biglogic.ca"
+			},
+			"BASE_PATH": "/",
+			"TITLE": "LayerPro",
+			"DESCRIPTION": "",
+			"PORT": 3000,
+			"THEME": "default",
+			"LANGUAGE": "en",
+			"LOGO": ""
+		}
+	},
 	"app": {
 		"port": 3000,
 		"code": "dphelper",
@@ -10,102 +53,40 @@
 		"folder": "/",
 		"appPort": "",
 		"main": "index.tsx",
-		"target": "web"
-	},
-	"api": {
-		"folder": "api",
-		"dev": "",
-		"prod": ""
-	},
-	"engines": {
-		"node": ">=12"
-	},
-	"overrides": {},
-	"scripts": {
-		"make-dist": "webpack --progress --color --mode production --config webpack.config.js",
-		"goLive": "cd mcp/node && node goLive",
-		">-----------------": "",
-		"backup": "cd mcp/backup && run.bat",
-		"git": "cd mcp/node && node gitDeploy",
-		">----------------": "",
-		"node:update": "cd mcp/node && node npmUpdate",
-		"test:lint": "eslint {/src/**/*,*}.{js,ts,jsx,tsx} --fix"
-	},
-	"eslintConfig": {
-		"globals": {
-			"globalThis": true,
-			"jQuery": true,
-			"$": true,
-			"window": true,
-			"dphelper": true,
-			"menupro": true,
-			"layerpro": true
+		"target": "web",
+		"proxy": {},
+		"api": {
+			"folder": "api",
+			"dev": "",
+			"prod": ""
 		},
-		"extends": [
-			"react-app"
+		"url": {
+			"dev": "http://localhost"
+		},
+		"info": {
+			"type": "gold",
+			"code": "dphelper",
+			"codeRelease": "dphelper"
+		},
+		"socket": {
+			"test": "",
+			"dev": ""
+		},
+		"cdn": {}
+	},
+	"cordova": {
+		"platforms": [
+			"android"
 		]
 	},
 	"globals": {
 		"jQuery": {},
 		"$": {},
 		"dphelper": {},
-		"menupro": {},
 		"layerpro": {},
+		"menupro": {},
 		"_": {}
 	},
-	"author": {
-		"name": "Dario Passariello",
-		"website": "https://dario.passariello.ca",
-		"email": "dariopassariello@gmail.com"
-	},
-	"contributors": [
-		{
-			"name": "Dario Passariello",
-			"email": "dariopassariello@gmail.com"
-		},
-		{
-			"name": "Valeria Cala Scaglitta",
-			"email": "valeriacalascaglitta@gmail.com"
-		}
-	],
-	"keywords": [
-		"helper",
-		"dphelper",
-		"utils",
-		"tools",
-		"uuid",
-		"random",
-		"window",
-		"store",
-		"easy",
-		"pro",
-		"powerful",
-		"dario",
-		"passariello"
-	],
-	"license": "Apache-2.0",
-	"homepage": "https://github.com/passariello/dphelper",
-	"funding": [
-		{
-			"type": "individual",
-			"url": "https://www.paypal.com/donate/?business=HC7LJ2ZXRRNDL&no_recurring=0&item_name=I+am+a+software+developer.+Just+a+donation+can+help+me+to+have+more+time+to+dedicate+on+this+project&currency_code=CAD"
-		},
-		{
-			"type": "patreon",
-			"url": "https://www.patreon.com/passariello"
-		}
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/passariello/dpHelper",
-		"help": "https://github.com/passariello/dpHelper#readme"
-	},
-	"bugs": {
-		"url": "https://github.com/passariello/dpHelper/issues"
-	},
-	"workspaces": [
-		"mcp"
-	],
 	"browserslist": {
 		"production": [
 			"last 2 Chrome major versions",
@@ -130,85 +111,146 @@
 			"last 1 safari version"
 		]
 	},
-	"dependencies": {
-		"@babel/core": "7.20.12",
-		"@typescript-eslint/parser": "5.48.0",
-		"classnames": "2.3.2",
-		"concurrently": "7.6.0",
-		"crypto-js": "4.1.1",
-		"css": "3.0.0",
-		"jquery": "3.6.3",
-		"jsdom-worker": "0.3.0",
-		"moment": "2.29.4",
-		"path": "0.12.7",
-		"react": "18.2.0",
-		"react-app-polyfill": "^3.0.0",
-		"react-dom": "18.2.0",
-		"react-router": "^6.6.1",
-		"react-router-dom": "^6.6.1",
-		"typescript": "4.9.4"
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"eslintConfig": {
+		"globals": {
+			"window": true,
+			"dphelper": true
+		}
+	},
+	"keywords": [
+		"helper",
+		"dphelper",
+		"utils",
+		"tools",
+		"uuid",
+		"random",
+		"window",
+		"store",
+		"easy",
+		"pro",
+		"powerful",
+		"state",
+		"status",
+		"dpHelper",
+		"dp helper",
+		"helper",
+		"local",
+		"storage",
+		"indexeddb",
+		"idb",
+		"devtool",
+		"dario",
+		"passariello"
+	],
+	"funding": [
+		{
+			"type": "individual",
+			"url": "https://www.paypal.com/donate/?business=HC7LJ2ZXRRNDL&no_recurring=0&item_name=I+am+a+software+developer.+Just+a+donation+can+help+me+to+have+more+time+to+dedicate+on+this+project&currency_code=CAD"
+		},
+		{
+			"type": "patreon",
+			"url": "https://www.patreon.com/passariello"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/passariello/dphelper.git",
+		"help": "git+https://github.com/passariello/dphelper.git#readme"
+	},
+	"bugs": {
+		"url": "https://github.com/passariello/dphelper/issues"
+	},
+	"scripts": {
+		"make-dist": "webpack --progress --color --mode production --config webpack.config.js --devtool hidden-source-map",
+		"watch": "webpack --watch --progress --color --mode production --config webpack.config.js",
+		"goLive": "cd mcp/node && node goLive",
+		">--------------": "",
+		"git": "cd mcp/node && node gitDeploy",
+		">----------------": "",
+		"prepublish": "tsc",
+		">---------------": "",
+		"backup": "cd mcp/backup && run.bat",
+		"update": "cd mcp/node && node npmUpdate",
+		"lint": "eslint {/**/*,*}.{js,ts,jsx,tsx} --fix",
+		">-----------------": ""
 	},
 	"devDependencies": {
-		"@babel/cli": "7.20.7",
-		"@babel/core": "7.20.12",
-		"@babel/eslint-parser": "^7.19.1",
+		"@babel/cli": "7.21.0",
+		"@babel/core": "7.21.4",
+		"@babel/eslint-parser": "^7.21.3",
 		"@babel/plugin-proposal-class-properties": "7.18.6",
-		"@babel/plugin-transform-for-of": "^7.18.8",
-		"@babel/plugin-transform-react-jsx": "^7.20.7",
-		"@babel/plugin-transform-runtime": "7.19.6",
-		"@babel/preset-env": "7.20.2",
+		"@babel/plugin-transform-for-of": "^7.21.0",
+		"@babel/plugin-transform-react-jsx": "^7.21.0",
+		"@babel/plugin-transform-runtime": "7.21.4",
+		"@babel/preset-env": "7.21.4",
 		"@babel/preset-react": "7.18.6",
-		"@babel/preset-typescript": "7.18.6",
-		"@babel/runtime": "^7.20.7",
-		"@testing-library/react": "^13.4.0",
+		"@babel/preset-typescript": "7.21.4",
+		"@babel/runtime": "^7.21.0",
+		"@testing-library/react": "^14.0.0",
 		"@testing-library/user-event": "^14.4.3",
-		"@types/node": "18.11.18",
-		"@types/react": "^18.0.26",
-		"@types/react-dom": "^18.0.10",
+		"@types/node": "18.15.11",
+		"@types/react": "^18.0.34",
+		"@types/react-dom": "^18.0.11",
 		"@types/react-redux": "^7.1.25",
 		"@types/redux": "^3.6.31",
 		"@types/webpack-env": "1.18.0",
-		"@typescript-eslint/eslint-plugin": "5.48.0",
-		"@typescript-eslint/parser": "5.48.0",
+		"@typescript-eslint/eslint-plugin": "5.58.0",
+		"@typescript-eslint/parser": "5.58.0",
 		"babel-loader": "^9.1.2",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-es2015": "^6.24.1",
 		"babel-preset-stage-0": "^6.24.1",
 		"child_process": "^1.0.2",
+		"classnames": "2.3.2",
 		"cli-confirm": "1.0.1",
 		"compression-webpack-plugin": "^10.0.0",
+		"concurrently": "8.0.1",
 		"copy-webpack-plugin": "^11.0.0",
 		"cordova-android": "^11.0.0",
+		"crypto-js": "4.1.1",
+		"css": "3.0.0",
 		"css-loader": "^6.7.3",
 		"dotenv": "^16.0.3",
-		"eslint": "8.31.0",
+		"eslint": "8.38.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-import-resolver-webpack": "^0.13.2",
-		"eslint-plugin-import": "2.26.0",
-		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-import": "2.27.5",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-react": "^7.31.11",
+		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-app": "^6.2.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-unicorn": "45.0.2",
+		"eslint-plugin-unicorn": "46.0.0",
 		"file-loader": "6.2.0",
 		"fs": "0.0.1-security",
 		"html-webpack-plugin": "5.5.0",
+		"jquery": "3.6.4",
+		"jsdom-worker": "0.3.0",
 		"jshint": "^2.13.6",
 		"less": "^4.1.3",
 		"less-loader": "^11.1.0",
 		"lint": "1.1.2",
-		"npm-check-updates": "^16.6.2",
+		"moment": "2.29.4",
+		"npm-check-updates": "^16.10.8",
 		"path": "^0.12.7",
 		"progress-bar-webpack-plugin": "2.1.0",
-		"sass": "^1.57.1",
-		"sass-loader": "^13.2.0",
-		"style-loader": "^3.3.1",
-		"terser-webpack-plugin": "^5.3.6",
+		"react": "18.2.0",
+		"react-app-polyfill": "^3.0.0",
+		"react-dom": "18.2.0",
+		"react-router": "^6.10.0",
+		"react-router-dom": "^6.10.0",
+		"sass": "^1.62.0",
+		"sass-loader": "^13.2.2",
+		"style-loader": "^3.3.2",
+		"terser-webpack-plugin": "^5.3.7",
 		"ts-loader": "^9.4.2",
-		"webpack": "^5.75.0",
+		"typescript": "5.0.4",
+		"webpack": "^5.78.0",
 		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.11.1"
+		"webpack-dev-server": "^4.13.2"
 	}
 }
