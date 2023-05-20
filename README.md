@@ -1,4 +1,6 @@
-# dpHelper Devtools
+```
+dpHelper Devtools by Dario Passariello
+```
 
 ![dpHelper](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/logos/logo.svg)
 
@@ -23,6 +25,37 @@ dpHleper is a pricise and complete collection of functions ready to use in all w
 You don't need to creare any extra files, dispatch or reducer… It's work like say 123.
 Please, read the [LICENSE](/LICENSE.md) agreement before to implementing in your application.
 
+## The Best Way To Use State
+
+You can use "state" to store all what you want and reuse everywhere. Like other state manager you can store information in JSON format and you can use them in react, useEffect, dispatch in a very easy way.
+
+_example:_
+
+You can use devtools in your browser and type " **state.test = 'I am ready'** ".
+Every time you want to use '**test**' you need just recall **state.test**.
+
+```javascript
+state.test = "I am ready";
+```
+
+recall
+
+```javascript
+state.test;
+```
+
+To see all states just use
+
+```javascript
+state;
+```
+
+PS: you can use dpHelper browser extension if you want to manage states in a easy way! :)
+
+![dpHelper Banner](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/images/screenshot2.png)
+
+---
+
 ## Install
 
 ```
@@ -39,9 +72,11 @@ in the index (and only there):
 
 ```javascript
 import "dphelper";
+```
 
-or;
+or
 
+```javascript
 require("dphelper");
 ```
 
@@ -70,6 +105,8 @@ You can call these from everywhere without import (just one at index)
 ![dpHelper Banner](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/images/banner.png)
 
 ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
+
+![dpHelper Banner](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/images/screenshot.png)
 
 Chrome: [Download from Google Web Store](https://chrome.google.com/webstore/detail/dphelper-manager-dev-tool/oppppldaoknfddeikfloonnialijngbk)
 Edge: [Download from Microsoft Addons](https://microsoftedge.microsoft.com/addons/detail/dphelper-manager-dev-to/kphabkbdpaljlfagldhojilhfammepnk)
