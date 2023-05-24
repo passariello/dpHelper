@@ -210,7 +210,7 @@
 		"compression-webpack-plugin": "^10.0.0",
 		"concurrently": "8.0.1",
 		"copy-webpack-plugin": "^11.0.0",
-		"cordova-android": "^11.0.0",
+		"cordova-android": "^12.0.0",
 		"crypto-js": "4.1.1",
 		"css": "3.0.0",
 		"css-loader": "^6.7.4",
