@@ -208,7 +208,7 @@
 		"classnames": "2.3.2",
 		"cli-confirm": "1.0.1",
 		"compression-webpack-plugin": "^10.0.0",
-		"concurrently": "8.0.1",
+		"concurrently": "8.2.0",
 		"copy-webpack-plugin": "^11.0.0",
 		"cordova-android": "^11.0.0",
 		"crypto-js": "4.1.1",
