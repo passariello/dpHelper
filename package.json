@@ -228,7 +228,7 @@
 		"eslint-plugin-unicorn": "47.0.0",
 		"file-loader": "6.2.0",
 		"fs": "0.0.1-security",
-		"html-webpack-plugin": "5.5.1",
+		"html-webpack-plugin": "5.5.3",
 		"jquery": "3.7.0",
 		"jsdom-worker": "0.3.0",
 		"jshint": "^2.13.6",
