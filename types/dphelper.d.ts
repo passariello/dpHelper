@@ -24,6 +24,7 @@ declare global {
 if (typeof window === 'undefined') window = globalThis
 
 window.dphelper = window.dphelper || {}
+
 window.state = window.state || {}
 window.store = window.store || {}
 window.cache = window.cache || {}
