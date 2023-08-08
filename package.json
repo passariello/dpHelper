@@ -188,7 +188,7 @@
 		"@types/redux": "^3.6.31",
 		"@types/webpack-env": "1.18.1",
 		"@typescript-eslint/eslint-plugin": "6.1.0",
-		"@typescript-eslint/parser": "6.1.0",
+		"@typescript-eslint/parser": "6.3.0",
 		"babel-loader": "9.1.3",
 		"babel-polyfill": "^6.26.0",
 		"babel-preset-es2015": "^6.24.1",
