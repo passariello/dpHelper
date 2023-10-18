@@ -56,7 +56,7 @@ PS: you can use dpHelper browser extension if you want to manage states in a eas
 
 ---
 
-## Install
+## Install for react + webpack projects
 
 ```
 npm i dphelper --save-dev
@@ -78,6 +78,14 @@ or
 
 ```javascript
 require("dphelper");
+```
+
+## Install for ejs or other type of projects (like html)
+
+note: you don't need to use npm install in this case or you get an error
+
+```html
+<script src="https://unpkg.com/dphelper@latest/index.js"></script>
 ```
 
 ## How to use it
