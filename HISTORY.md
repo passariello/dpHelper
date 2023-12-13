@@ -1,11 +1,36 @@
 # Changelog
 
+## v0.4.9 / 2023-12-12
+
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+- General bug fix  [Dario Passariello](https://github.com/passariello) ()
+- Fix document forlder issue [Dario Passariello](https://github.com/passariello) ()
+
+## Previous
+
+## v0.4.8 / 2023-11-23
+
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+- Added split extension as dphelper.system  [Dario Passariello](https://github.com/passariello) ()
+- General bug fix  [Dario Passariello](https://github.com/passariello) ()
+- Removed documents folder from dist  [Dario Passariello](https://github.com/passariello) ()
+
+## v0.4.7 / 2023-11-11
+
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+
+## v0.4.6 / 2023-11-08
+
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+
+## v0.4.5 / 2023-11-08
+
+- NPM update [Dario Passariello](https://github.com/passariello) ()
+
 ## v0.4.4 / 2023-10-25
 
 - Change license from CC BY-NC-ND 4.0 to MIT [Dario Passariello](https://github.com/passariello) ()
 - NPM update [Dario Passariello](https://github.com/passariello) ()
-
-## Previous
 
 ## v0.4.3 / 2023-10-18
 
