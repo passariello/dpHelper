@@ -1,12 +1,27 @@
-# Changelog
+## Changelog
+
+## v0.5.2 / 2024-01-06
+
+- Add new functions  [Dario Passariello](https://github.com/passariello) ()
+- Bug fix  [Dario Passariello](https://github.com/passariello) ()
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+
+## Previous
+
+## v0.5.0 / 2024-01-01
+
+- Add dates functionalities  [Dario Passariello](https://github.com/passariello) ()
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
+
+## v0.4.91 / 2023-12-20
+
+- NPM update  [Dario Passariello](https://github.com/passariello) ()
 
 ## v0.4.9 / 2023-12-12
 
 - NPM update  [Dario Passariello](https://github.com/passariello) ()
 - General bug fix  [Dario Passariello](https://github.com/passariello) ()
 - Fix document forlder issue [Dario Passariello](https://github.com/passariello) ()
-
-## Previous
 
 ## v0.4.8 / 2023-11-23
 
