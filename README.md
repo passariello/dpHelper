@@ -1,6 +1,6 @@
 # I am dpHelper
 
-```text
+```
 dpHelper Devtools by Dario Passariello
 ```
 
@@ -27,6 +27,13 @@ dpHelper is a pricise and complete collection of functions ready to use in all w
 You don't need to creare any extra files, dispatch or reducer… It's work like say 123.
 
 Please, read the [LICENSE](/LICENSE.md) agreement before to implementing in your application.
+
+## Live demo
+
+[https://a51.dev/tests/](https://a51.dev/tests/)
+
+You can see an HTML version where dpHelper and LayerPro works.
+You can use with html, react, vue or any other frontend / library.
 
 ## The Best Way To Use State
 
@@ -61,13 +68,13 @@ PS: you can use dpHelper browser extension if you want to manage states in a eas
 
 ## Install for react + webpack projects
 
-```text
+```
 npm i dphelper --save-dev
 ```
 
 or update:
 
-```text
+```
 npm i dphelper@latest --save-dev
 ```
 
@@ -126,4 +133,4 @@ This extension allows you to manage your app's dpHelper NPM. Here you will find 
 
 ---
 
-copyright (c) 2019 - 2023 by Dario Passariello
+copyright (c) 2019 - 2024 by Dario Passariello
