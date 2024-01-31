@@ -220,7 +220,7 @@
 		"jsdom-worker": "0.3.0",
 		"jshint": "^2.13.6",
 		"less": "4.2.0",
-		"less-loader": "^11.1.4",
+		"less-loader": "^12.2.0",
 		"lint": "1.1.2",
 		"npm-check-updates": "16.14.12",
 		"path": "^0.12.7",
