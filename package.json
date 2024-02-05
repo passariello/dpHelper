@@ -222,7 +222,7 @@
 		"less": "4.2.0",
 		"less-loader": "^11.1.4",
 		"lint": "1.1.2",
-		"npm-check-updates": "16.14.12",
+		"npm-check-updates": "16.14.14",
 		"path": "^0.12.7",
 		"progress-bar-webpack-plugin": "2.1.0",
 		"react": "18.2.0",
