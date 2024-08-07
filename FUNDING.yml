@@ -10,7 +10,7 @@ liberapay: passariello
 issuehunt: passariello
 otechie: # Replace with a single Otechie username
 custom:
-  [
-    "https://dario.passariello.ca",
-    "https://www.indiegogo.com/individuals/28513718",
-  ]
+ [
+  "https://dario.passariello.ca",
+  "https://www.indiegogo.com/individuals/28513718",
+ ]

@@ -1,5 +1,5 @@
 /*
-Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+Copyright: © 2019 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 declare module '*.less' {
@@ -19,4 +19,3 @@ declare module '*.sass' {
   const resource: { [key: string]: any }
   export = resource
 }
-
