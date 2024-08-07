@@ -1,5 +1,5 @@
 /*
-Copyright: © 2022 Dario Passariello <dariopassariello@gmail.com>
+Copyright: © 2019 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
