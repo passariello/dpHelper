@@ -3,17 +3,39 @@ Copyright: © 2019 Dario Passariello <dariopassariello@gmail.com>
 License: MIT
 */
 
-declare module 'dphelper' { }
+////////////////////
+// Global object
+////////////////////
 
-declare var
-  dphelper: any,
-  api: any
+/**
+* @return dpHelper Root.
+*/
+interface _dpHelper {
+  /**
+   * Set parameter in dphelper
+   * @param key Name of main function.
+   * @return The values.
+   */
+  [key: string]: any
+
+  // _list: {
+  //   scripts: any
+  //   sockets: any
+  // }
+
+}
+
+declare var dphelper: _dpHelper
+type dphelper = _dpHelper
 
 dphelper = {}
-api = {}
 
+//////////////////////////////////////////////////////////////////////////////////////
+// EXTRA
+
+/*******************************************************************************/
 // OVERRIDE CONFIRM FUNCTION
+
 declare function confirm(message?: string, func?: func, func?: func): boolean
 
-type dphelper = { [key: Any]: Any }
-type api = { [key: string]: Any }
+///////////////////

@@ -26,7 +26,7 @@ Manager | DevTools by [Dario Passariello (c)](https://dario.passariello.ca)
 dpHelper is a pricise and complete collection of functions ready to use in all web application. State and Store Management are now easy and global. Just for example **state.myData = "hello world"** and your string is ready everywhere in your Ajax or React app. It's more easy and intuitive of Redux.
 You don't need to creare any extra files, dispatch or reducer.
 
-Please, read the [LICENSE](/LICENSE.md) agreement before to implementing in your application.
+Please, read the [LICENSE](/LICENSE.txt) agreement before to implementing in your application.
 
 ## Live demo
 
