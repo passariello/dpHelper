@@ -1,9 +1,5 @@
 interface _dpHelper extends _dpHelper {
 
-  /**
-   * dispatch
-   * @return group of commands.
-  */
   dispatch: {
     /**
      * info

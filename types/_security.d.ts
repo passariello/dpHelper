@@ -5,10 +5,9 @@ interface _dpHelper extends _dpHelper {
     uuid: {
       v5: () => String
     },
-    hashPass: (u, p) => Promise
-    crypt: (u, p, monitored) => String
-    deCrypt: (u, p, mode) => String
-    AES_KeyGen: (passKey) => String
+    hashPass: (u: any, p: any) => any
+    crypt: (u: any, p: any, monitored: any) => String
+    deCrypt: (u: any, p: any, mode: any) => String
+    AES_KeyGen: (passKey: any) => String
   }
-
 }

@@ -1,46 +1,45 @@
 {
   "name": "dphelper",
-  "version": "1.2.4",
-  "displayName": "dphelper",
+  "version": "1.7.6",
   "description": "dphelper devtools | tools, store and state management brave developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
-  "relaseType": "gold",
-  "port": 3000,
-  "code": "vulcano",
-  "codeRelease": "dphelper",
   "folder": "/",
-  "appPort": "",
-  "main": "./index.tsx",
-  "target": "web",
-  "logo": "",
+  "main": "./index.ts",
   "typeID": 0,
   "theme": "default",
   "deprecated": false,
+  "target": "web",
   "targets": "web",
   "preferGlobal": true,
   "language": {
     "en": {}
   },
   "app": {
+    "displayName": "dphelper",
     "port": 3000,
-    "code": "dphelper",
+    "code": "vulcano",
+    "relaseType": "gold",
+    "codeRelease": "dphelper",
     "name": "dphelper",
     "type": "beta",
     "folder": "/",
     "appPort": "",
-    "main": "index.tsx",
+    "main": "index.ts",
     "target": "web",
-    "proxy": {},
-    "api": {
-      "dir": "/api/",
-      "local": "//api.biglogic.ca",
-      "prod": "//api.biglogic.ca",
-      "dev": "//api.biglogic.ca"
+    "proxy": {
+      "api": {
+        "tst": "http://localhost:5003/",
+        "dev": "https://a51.dev/",
+        "pro": "https://a51.dev/"
+      }
     },
     "socket": {
-      "test": "https://ws.biglogic.ca",
-      "dev": "https://ws.biglogic.ca"
+      "url": {
+        "tst": "wss://ws.a51.dev/",
+        "dev": "wss://ws.a51.dev/",
+        "pro": "wss://ws.a51.dev/"
+      }
     },
     "url": {
       "dev": "http://localhost"
@@ -91,6 +90,7 @@
       ]
     }
   ],
+  "types": "./index.d.ts",
   "typings": "./types/*",
   "globals": {
     "dphelper": {},
@@ -151,8 +151,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/passariello/dphelper.git",
-    "help": "git+https://github.com/passariello/dphelper.git#readme"
+    "url": "https://github.com/passariello/dphelper",
+    "help": "https://github.com/passariello/dphelper#readme"
   },
   "bugs": {
     "url": "https://github.com/passariello/dphelper/issues"
@@ -167,66 +167,33 @@
     "types/*"
   ],
   "scripts": {
-    "watch": "webpack --watch --progress --color --mode=production --config webpack.ts",
+    "watch": "webpack --watch --progress --color --mode=development --config webpack.ts",
     "make-dist": "webpack --progress --color --mode=production --config webpack.ts",
     "-": "--------------",
     "git": "git push --all -u && git add . && git commit -m \"update\" && git pull && git push --all",
     "--": "-------------",
     "tsc": "tsc -b",
-    "oxlint": "oxlint --config=./.eslintrc.json --tsconfig=./tsconfig.json",
+    "eslint": "eslint",
     "---": "------------",
-    "jsdoc": "jsdoc -r -c ./jsdoc.json",
-    "jsdoc1": "jsdoc -r -c ./jsdoc.json && jsdoc2md --files index.js > docs/doc.md",
     "pack": "cd dist && npm pack",
     "backup": "cd mcp/batch && backup.bat",
+    "license": "npx license-checker-rseidelsohn --direct --markdown --out .github/license.md",
     "update": "cd mcp/javascripts && node npmUpdate"
   },
   "devDependencies": {
-    "@babel/cli": "7.24.8",
-    "@babel/core": "7.25.2",
-    "@babel/plugin-transform-runtime": "7.24.7",
-    "@babel/preset-env": "7.25.3",
-    "@babel/preset-react": "7.24.7",
-    "@babel/preset-typescript": "7.24.7",
-    "@babel/runtime": "^7.25.0",
-    "@types/node": "22.3.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
     "@types/webpack-env": "1.18.5",
-    "babel-loader": "9.1.3",
     "compression-webpack-plugin": "11.1.0",
     "copy-webpack-plugin": "^12.0.2",
     "crypto-js": "4.2.0",
-    "css": "3.0.0",
-    "css-loader": "^7.1.2",
-    "dotenv": "^16.4.5",
     "file-loader": "6.2.0",
-    "fs": "0.0.1-security",
-    "html-webpack-plugin": "5.6.0",
     "jquery": "3.7.1",
-    "jsdoc": "4.0.3",
-    "jsdoc-babel": "0.5.0",
-    "jsdoc-to-markdown": "8.0.3",
-    "jsdom-worker": "0.3.0",
-    "jshint": "^2.13.6",
-    "less": "4.2.0",
-    "less-loader": "^12.2.0",
-    "path": "^0.12.7",
-    "progress-bar-webpack-plugin": "2.1.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-router": "^6.26.0",
-    "react-router-dom": "^6.26.0",
-    "sass": "^1.77.8",
-    "sass-loader": "^16.0.0",
-    "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "ts-node": "10.9.2",
-    "typescript": "5.5.4",
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
+    "typescript": "5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "^5.1.0",
     "x2js": "3.4.4"
   }
 }

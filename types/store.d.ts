@@ -1,7 +1,7 @@
 /**
  * Create states using: store.set("example",{test:"test"})
 */
-interface dpStore {
+interface _store {
 
   /**
     * Create a new store
@@ -14,7 +14,7 @@ interface dpStore {
     * @param param The information taht you want to store (Any).
     * @return boolean
   */
-  readonly set: (name: string, param: any) => any
+  set(name: string, param: any): any
 
   /**
     * Have back the data from a store.
@@ -25,7 +25,7 @@ interface dpStore {
     * @since dpHelper 0.0.1
     * @param name The String as name to define the store.
   */
-  readonly get: (name: string) => any
+  get(name: string): any
 
   /**
     * Delete an existing store:
@@ -37,7 +37,7 @@ interface dpStore {
     * @param name The String as name to define the store.
     * @return boolean
   */
-  readonly delete: (name: string) => any
+  delete(name: string): any
 
   /**
     * Delete all storages
@@ -48,7 +48,7 @@ interface dpStore {
     * @since dpHelper 0.0.1
     * @return boolean
   */
-  readonly clearAll: () => void
+  clearAll(): any
 
   /**
     * Know how much space you have for total storages
@@ -59,7 +59,7 @@ interface dpStore {
     * @since dpHelper 0.0.1
     * @return values
   */
-  readonly quota: () => void
+  quota(): any
 
   /**
     * Get the size of stores an the total
@@ -70,13 +70,11 @@ interface dpStore {
     * @since dpHelper 0.0.1
     * @return dimension in kb
   */
-  readonly size: () => any
+  size(): any
 
   // TODO
   // readonly increaseQuota: (value: number) => void
 }
 
-declare var store: dpStore
-type store = dpStore
-
-store = {}
+declare var store: _store
+type store = _store

@@ -9,13 +9,10 @@ declare module 'jquery'
 
 // ////////////////////////////////////////////////////////////////
 
-interface globalThis {
+interface window {
   $: any
   jQuery: any
 }
 
-type $ = globalThis
-type jQuery = globalThis
-
-$ = {}
-jQuery = {}
+type $ = {}
+type jQuery = {}

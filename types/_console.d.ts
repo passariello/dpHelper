@@ -1,25 +1,25 @@
 interface _dpHelper extends _dpHelper {
 
-  /**
-   * Root
-   * @return group of commands.
-  */
   console: {
     /**
      * info
      * @return console log of paramenters.
     */
-    info: (name: String, message: String, func: Function) => any
+    info?: (name: String, message: String, func: Function) => any
     /**
      * stop
      * @return stop all.
     */
-    stop: (options?) => any
+    stop?: (options?: any) => any
     /**
      * stop
      * @return stop all.
     */
-    toHtml: (element: string) => any
+    toHtml?: (element: string) => any
+
+    method?: any
+
+    disableYellowBox?: any
   }
 
 }

@@ -8,10 +8,17 @@ License: MIT
 * @return Some stuff you cache... usually used for dynamic imports from dpHelper.
 */
 interface dpCache {
+
+  /**
+  * Create a cache, please use state instead!
+  *
+  * @example
+  * cache.myCache = any
+  *
+  * @since dpHelper 1.0.6
+  */
   [key: string]: any
 }
 
 declare var cache: dpCache
 type cache = dpCache
-
-cache = {}

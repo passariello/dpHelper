@@ -19,6 +19,7 @@ interface _dpHelper extends _dpHelper {
 
     generate: (num: number) => array
     rand32: (num: number) => array
+    findindex: (array: array, key: number) => number
   }
 
 }

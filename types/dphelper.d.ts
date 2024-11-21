@@ -27,15 +27,14 @@ interface _dpHelper {
 
 declare var dphelper: _dpHelper
 type dphelper = _dpHelper
+type process = {}
 
-dphelper = {}
-
-//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 // EXTRA
 
 /*******************************************************************************/
 // OVERRIDE CONFIRM FUNCTION
 
-declare function confirm(message?: string, func?: func, func?: func): boolean
+declare function confirm(message: string, func1: Function, func2?: Function): boolean
 
 ///////////////////
