@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "description": "dphelper devtools | tools, store and state management brave developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -177,7 +177,6 @@
     "---": "------------",
     "pack": "cd dist && npm pack",
     "backup": "cd mcp/batch && backup.bat",
-    "license": "npx license-checker-rseidelsohn --direct --markdown --out .github/license.md",
     "update": "cd mcp/javascripts && node npmUpdate"
   },
   "devDependencies": {
