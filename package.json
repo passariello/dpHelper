@@ -1,7 +1,7 @@
 {
   "name": "dphelper",
-  "version": "1.7.7",
-  "description": "dphelper devtools | tools, store and state management brave developers by Dario Passariello",
+  "version": "1.8.0",
+  "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
   "folder": "/",
