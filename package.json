@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.8.0",
+  "version": "1.8.6",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -174,6 +174,7 @@
     "--": "-------------",
     "tsc": "tsc -b",
     "eslint": "eslint",
+    "sandworm": "sandworm",
     "---": "------------",
     "pack": "cd dist && npm pack",
     "backup": "cd mcp/batch && backup.bat",
@@ -181,7 +182,6 @@
   },
   "devDependencies": {
     "@types/webpack-env": "1.18.5",
-    "compression-webpack-plugin": "11.1.0",
     "copy-webpack-plugin": "^12.0.2",
     "crypto-js": "4.2.0",
     "file-loader": "6.2.0",
@@ -189,7 +189,7 @@
     "terser-webpack-plugin": "^5.3.10",
     "ts-loader": "^9.5.1",
     "ts-node": "10.9.2",
-    "typescript": "5.6.3",
+    "typescript": "5.7.2",
     "webpack": "^5.96.1",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "^5.1.0",
