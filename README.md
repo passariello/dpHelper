@@ -6,6 +6,17 @@
 
 [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
 [![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper/latest)](https://socket.dev/npm/package/dphelper/overview/latest)
+<!-- [![Package Quality](https://packagequality.com/shield/dphelper.svg)](https://packagequality.com/#?package=dphelper) -->
+
+[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
+[![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
+
+<!--
+![npms.io](https://img.shields.io/npms-io/maintenance-score/dphelper)
+![npms.io](https://img.shields.io/npms-io/quality-score/dphelper)
+![npms.io](https://img.shields.io/npms-io/popularity-score/dphelper)
+![npms.io](https://img.shields.io/npms-io/final-score/dphelper)
+-->
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
 ![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
