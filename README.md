@@ -4,19 +4,21 @@
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
+[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
+
 [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper/latest)](https://socket.dev/npm/package/dphelper/overview/latest)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper/overview)
+[![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
 ![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
-
 ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
 
 
 ## About 🔥
 
 dpHelper is a precise and complete collection of 190+ tools ready to use in all web/SaaS applications.
-State and Store Management are now easy and global. You can store data globally using state, for example: **state.myData = "hello world"**, and access it everywhere in your application, including Ajax or React apps, without the need for extra files or Redux setup.
+State and Store Management are now easy and global and access it everywhere in your application, including Ajax or React apps, without the need for extra files or Redux setup.
 
 ### example in react
 
@@ -110,10 +112,15 @@ state.test = "I am ready";
 state.test
 
 // List all states
-state
+state.list // or just state
+
+// Remove a state
+state.remove("test")
 ```
 
 ## Observer 😎
+
+**Important**: Observer works only with states.
 
 If you want to run a function everytime a state change... you can use:
 
@@ -145,12 +152,31 @@ setInterval(() => {
 }, 5000);
 
 ```
+#### another simple example:
 
-## State vs Store 🎅
+```javascript
+import 'dphelper';
+
+// Set a state
+state.myData = 'Hello, world!';
+
+// Retrieve the state
+console.log(state.myData); // Output: Hello, world!
+
+// Observe state changes
+observer('myData', () => {
+  console.log('myData has changed to:', state.myData);
+});
+
+// Change the state
+state.myData = 'New value';
+```
+
+## State 'n Store 🎅
 
 ### Persistent Storage with dpHelper
 
-When using dpHelper for permanent storage, you should use the store function instead of state. This is because store utilizes localStorage, which stores data persistently across sessions.
+When using dpHelper for permanent storage, you should use the **store** instead of **state**. This is because store utilizes localStorage, which stores data persistently across sessions.
 
 #### Important Security Note
 
@@ -170,7 +196,7 @@ store.get("test") // Output: { test:"test" }
 // Remove a store:
 store.delete("test") // Output: "ok"
 
-// Remove all:
+// Remove all stores:
 store.clearAll() // Output: "ok"
 
 ```
@@ -213,15 +239,17 @@ export default App;
 
 ---
 
-## Install
+## Usage
 
-```
+install dpHelper.
+
+```shell
 npm i dphelper --save-dev
 ```
 
 or update:
 
-```
+```shell
 npm i dphelper@latest --save-dev
 ```
 ---
@@ -245,9 +273,9 @@ note: you don't need to use npm install in this case or you get an error
 <script src="https://unpkg.com/dphelper@latest/index.js"></script>
 ```
 
-## How to use it
+## Console it!
 
-type 'dphelper' in the console of your browser to have a look about all available & tools that you can use!
+type **dphelper** in the devtool console of your browser to have a look about all available & tools that you can use!
 
 You can call these from everywhere without import (just one time in main / root page)
 
@@ -282,9 +310,13 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 ## Check
 
-Socket.dev: [https://socket.dev/npm/package/dphelper](https://socket.dev/npm/package/dphelper)
+[Socket.dev](https://socket.dev/npm/package/dphelper)
 
-Snyk.io: [https://security.snyk.io/package/npm/dphelper](https://security.snyk.io/package/npm/dphelper)
+[Snyk.io](https://security.snyk.io/package/npm/dphelper)
+
+## License
+
+ [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
 ---
 
