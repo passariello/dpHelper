@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.8.6",
+  "version": "1.8.11",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -24,7 +24,6 @@
     "name": "dphelper",
     "type": "beta",
     "folder": "/",
-    "appPort": "",
     "main": "index.ts",
     "target": "web",
     "proxy": {
@@ -43,11 +42,6 @@
     },
     "url": {
       "dev": "http://localhost"
-    },
-    "info": {
-      "type": "gold",
-      "code": "dphelper",
-      "codeRelease": "dphelper"
     },
     "cdn": {}
   },
@@ -170,7 +164,7 @@
     "watch": "webpack --watch --progress --color --mode=development --config webpack.ts",
     "make-dist": "webpack --progress --color --mode=production --config webpack.ts",
     "-": "--------------",
-    "git": "git push --all -u && git add . && git commit -m \"update\" && git pull && git push --all",
+    "git": "git push -f -u && git add . && git commit -m \"update\" && git pull && git push -f",
     "--": "-------------",
     "tsc": "tsc -b",
     "eslint": "eslint",
