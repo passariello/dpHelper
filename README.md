@@ -56,26 +56,36 @@ dpHelper is compatible with a variety of frontend libraries, including:
 * Vue
 * And any other frontend library
 
+## Documentation
+
+You can see more tutorials, information and example about **dpHelper** [clicking here](https://passariello.github.io/dpHelper/)
+
 ## What you need to know about "no-refresh/reload" 🧐
 
 ### dpHelper Compatibility and AJAX Technology
 
-dpHelper is primarily designed to work with websites, applications, and portals that use **AJAX/XMLHttpRequest technology**, such as:
+dpHelper is primarily designed to work with websites, SPA, SaaS applications, and portals that use **AJAX/XMLHttpRequest technology**, such as:
 
 1. PWA (Progressive Web Apps)
 2. SPA (Single-Page Applications)
+3. SaaS
+4. Microservice
+
+and more...
+
+is also indicate to work with and for:
+
+1. React
+2. jQuery
 3. Angular
-4. React
-5. jQuery
-6. ...
+4. Vue
+5. Vanilla
+
+and more...
 
 ### What does this mean?
 
 Modern browsers and applications use a **"NO REFRESH" behavior**, where only the affected parts of the page are re-rendered, rather than reloading the entire page. This can cause **data loss** when refreshing or reloading the page.
-
-### Recommendation
-
-If you want to use dpHelper as a state/store manager, consider using the **store function** in a non-AJAX engine. If you need help or more information, feel free to contact me.
 
 #### You can find more information and related topics at the following links:
 
@@ -85,19 +95,19 @@ If you want to use dpHelper as a state/store manager, consider using the **store
 
 [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 
+### Recommendation
+
+If you want to use dpHelper as a data manager, consider using the **store** function in a **non-AJAX engine**. If you need help or more information, feel free to contact me.
+
 <!--You are not a tech guy, nerd or geek? ... no worries. Fix it... go to hiring one 🤭-->
 
-## The Best Way To Use State and Store 💥
+## The Best Way To Use State 💥
 
 ### Using the "state" Function
 
-You can use the state function to store and reuse data throughout your application. Similar to other state managers, you can store information in JSON format and access it easily in various contexts, including:
+You can use the state function to store and reuse data throughout your application. Similar to other state managers, you can save state information in JSON format and access it easily in various contexts, including React useEffect and / or dispatch.
 
-1. React
-2. useEffect
-3. dispatch
-
-For example, you can store a value like this: state.test = 'I am ready' and then retrieve it later using state.test.
+For example, you can store a value like this: _state.test = 'I am ready'_ and then retrieve it later using state.test.
 
 _example:_
 
@@ -118,9 +128,9 @@ state.list // or just state
 state.remove("test")
 ```
 
-## Observer 😎
-
-**Important**: Observer works only with states.
+### Observer 😎 for States
+---
+**Note**: _Observer works only with states. Stores are excluded at the moment._
 
 If you want to run a function everytime a state change... you can use:
 
@@ -172,7 +182,7 @@ observer('myData', () => {
 state.myData = 'New value';
 ```
 
-## State 'n Store 🎅
+## The Best Way To Use Store 🫙
 
 ### Persistent Storage with dpHelper
 
