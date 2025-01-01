@@ -55,10 +55,10 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](STATE.md)
-- [Store](STORE_file.md)
-- [Observer](OBSERVERe.md)
-- [List of functions](LIST.md)
+- [State](/STATE.md)
+- [Store](/STORE_file.md)
+- [Observer](/OBSERVER.md)
+- [List of functions](/LIST.md)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
 
