@@ -1,3 +1,10 @@
+/*!
+  dphelper
+  Copyright (c) 2019 Dario Passariello <dariopassariello@gmail.com>
+  Licensed under MIT License, see
+  https://dario.passariello.ca
+*/
+
 /// <reference path="./types/dphelper.d.ts" />
 /// <reference path="./types/jquery.d.ts" />
 
@@ -6,9 +13,3 @@
 /// <reference path="./types/store.d.ts" />
 /// <reference path="./types/cache.d.ts" />
 /// <reference path="./types/idb.d.ts" />
-
-/// <reference path="./types/_array.d.ts" />
-/// <reference path="./types/_console.d.ts" />
-/// <reference path="./types/_dispatch.d.ts" />
-/// <reference path="./types/_security.d.ts" />
-/// <reference path="./types/_cookie.d.ts" />

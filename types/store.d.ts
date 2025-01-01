@@ -1,3 +1,10 @@
+/*!
+  dphelper
+  Copyright (c) 2019 Dario Passariello <dariopassariello@gmail.com>
+  Licensed under MIT License, see
+  https://dario.passariello.ca
+*/
+
 /**
  * Create states using: store.set("example",{test:"test"})
 */
@@ -9,12 +16,12 @@ interface _store {
     * @example
     * store.set("test","example") // or Array, Object, Number, Functions...
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @param name The String as name to define the store.
     * @param param The information taht you want to store (Any).
     * @return boolean
   */
-  set(name: string, param: any): any
+  set: (name: string, value: any) => void
 
   /**
     * Have back the data from a store.
@@ -22,10 +29,10 @@ interface _store {
     * @example
     * store.get("test")
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @param name The String as name to define the store.
   */
-  get(name: string): any
+  get: (name: string) => any
 
   /**
     * Delete an existing store:
@@ -33,11 +40,11 @@ interface _store {
     * @example
     * store.delete("test")
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @param name The String as name to define the store.
     * @return boolean
   */
-  delete(name: string): any
+  delete: (name: string) => boolean | undefined
 
   /**
     * Delete all storages
@@ -45,10 +52,10 @@ interface _store {
     * @example
     * store.clearAll()
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @return boolean
   */
-  clearAll(): any
+  clearAll: () => boolean
 
   /**
     * Know how much space you have for total storages
@@ -56,10 +63,10 @@ interface _store {
     * @example
     * store.quota()
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @return values
   */
-  quota(): any
+  quota: () => void
 
   /**
     * Get the size of stores an the total
@@ -67,10 +74,10 @@ interface _store {
     * @example
     * store.size()
     *
-    * @since dpHelper 0.0.1
+    * @since dphelper 0.0.1
     * @return dimension in kb
   */
-  size(): any
+  size: () => number
 
   // TODO
   // readonly increaseQuota: (value: number) => void

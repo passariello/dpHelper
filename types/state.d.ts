@@ -1,3 +1,10 @@
+/*!
+  dphelper
+  Copyright (c) 2019 Dario Passariello <dariopassariello@gmail.com>
+  Licensed under MIT License, see
+  https://dario.passariello.ca
+*/
+
 /**
 * If you use only "state" you get the entire Proxy object
 * @return Proxy Object of all states.
@@ -12,7 +19,7 @@ interface _state {
    * @example
    * state.remove(stateName)
    *
-   * @since dpHelper 0.0.1
+   * @since dphelper 0.0.1
    * @param stateName The name of the state for which you want to delete.
    * @return boolean.
    */
@@ -24,15 +31,15 @@ interface _state {
    * @example
    * state.list
    *
-   * @since dpHelper 0.0.1
+   * @since dphelper 0.0.1
    * @return Object of all states (Not the Proxy).
    */
   readonly list?: (stateName: string) => any
 
   /**
-  * Generate a message for "dpHelper Manage"
+  * Generate a message for "dphelper Manage"
   * Note: FOR INTERNAL USE ONLY.
-  * @since dpHelper 0.0.1
+  * @since dphelper 0.0.1
   */
   readonly mex?: any
 
@@ -44,7 +51,7 @@ interface _state {
 * @example
 * state.myStuff = any
 *
-* @since dpHelper 0.0.1
+* @since dphelper 0.0.1
 * @param key The name of the state for which you want to modify the action.
 * @return The previous values (Any).
 * Important: Object is a Proxy.

@@ -1,29 +1,26 @@
-# I am dpHelper
+# dpHelper
 
-![dpHelper](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/logos/logo.svg)
+![dpHelper](https://raw.githubusercontent.com/passariello/container/92b999bad3a5e68d6e6ec800c3974383dba16244/dphelper/assets/images/banner.svg)
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
 [![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
-
 [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper/overview)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
 [![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
-![dpHelper](https://img.shields.io/badge/dpHelper-npm-green?logo=dpHelper&logoColor=white)
+![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper&logoColor=white)
 ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
-
 
 ## About 🔥
 
-dpHelper is a precise and complete collection of 190+ tools ready to use in all web/SaaS applications.
-State and Store Management are now easy and global and access it everywhere in your application, including Ajax or React apps, without the need for extra files or Redux setup.
+dpHelper is a precise and complete collection of 190+ tools ready to use in all web/SaaS applications. State and Store Management are now easy and global, accessible everywhere in your application, including Ajax or React apps, without the need for extra files or Redux setup.
 
-### example in react
+### Example in React
 
 ```javascript
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import 'dphelper';
 
 function App() {
@@ -32,7 +29,7 @@ function App() {
 
   // Use the stored value in a React component
   useEffect(() => {
-    console.log("you can recall from all pages: " + state.test); // Output: "Hello, World!"
+    console.log("You can recall from all pages: " + state.test); // Output: "Hello, World!"
   }, []);
 
   return (
@@ -45,12 +42,11 @@ function App() {
 export default App;
 ```
 
-## Live demo
+## Live Demo
 
 [https://a51.dev/tests/](https://a51.dev/tests/)
 
-You can see an HTML version where dpHelper and LayerPro work together seamlessly.
-dpHelper is compatible with a variety of frontend libraries, including:
+You can see an HTML version where dpHelper and LayerPro work together seamlessly. dpHelper is compatible with a variety of frontend libraries, including:
 * HTML
 * React
 * Vue
@@ -58,9 +54,15 @@ dpHelper is compatible with a variety of frontend libraries, including:
 
 ## Documentation
 
-You can see more tutorials, information and example about **dpHelper** [clicking here](https://passariello.github.io/dpHelper/)
+You can see:
+- [State](STATE.md)
+- [Store](STORE_file.md)
+- [Observer](OBSERVERe.md)
+- [List of functions](LIST.md)
 
-## What you need to know about "no-refresh/reload" 🧐
+You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
+
+## What You Need to Know About "No-Refresh/Reload" 🧐
 
 ### dpHelper Compatibility and AJAX Technology
 
@@ -73,7 +75,7 @@ dpHelper is primarily designed to work with websites, SPA, SaaS applications, an
 
 and more...
 
-is also indicate to work with and for:
+It is also indicated to work with and for:
 
 1. React
 2. jQuery
@@ -83,7 +85,7 @@ is also indicate to work with and for:
 
 and more...
 
-### What does this mean?
+### What Does This Mean?
 
 Modern browsers and applications use a **"NO REFRESH" behavior**, where only the affected parts of the page are re-rendered, rather than reloading the entire page. This can cause **data loss** when refreshing or reloading the page.
 
@@ -99,20 +101,17 @@ Modern browsers and applications use a **"NO REFRESH" behavior**, where only the
 
 If you want to use dpHelper as a data manager, consider using the **store** function in a **non-AJAX engine**. If you need help or more information, feel free to contact me.
 
-<!--You are not a tech guy, nerd or geek? ... no worries. Fix it... go to hiring one 🤭-->
-
 ## The Best Way To Use State 💥
 
 ### Using the "state" Function
 
-You can use the state function to store and reuse data throughout your application. Similar to other state managers, you can save state information in JSON format and access it easily in various contexts, including React useEffect and / or dispatch.
+You can use the state function to store and reuse data throughout your application. Similar to other state managers, you can save state information in JSON format and access it easily in various contexts, including React useEffect and/or dispatch.
 
 For example, you can store a value like this: _state.test = 'I am ready'_ and then retrieve it later using state.test.
 
 _example:_
 
-You can use browser's devtools console and type " **state.test = 'I am ready'** ".
-Every time you want to use '**test**' values you need just recall **state.test**.
+You can use the browser's devtools console and type " **state.test = 'I am ready'** ". Every time you want to use '**test**' values, you need just recall **state.test**.
 
 ```javascript
 // Set a state
@@ -129,40 +128,45 @@ state.remove("test")
 ```
 
 ### Observer 😎 for States
----
+
 **Note**: _Observer works only with states. Stores are excluded at the moment._
 
-If you want to run a function everytime a state change... you can use:
+🔥NEW🔥: Great, now you can use nested objects in observer. You need to declare "state." or "store." before selecting the object you want to monitor.
+
+If you want to run a function every time a state changes, you can use:
 
 ```javascript
 /**
-* Observer is a non cumulative listener,
-* is trigged from customEvent / dispatch from state
+* Observer is a non-cumulative listener,
+* triggered from customEvent / dispatch from state
 * @parameters
-* [ name, function ]
+* [ state | store, function ]
 */
-observer("test", ()=> alert( "Test Changes to: " + state.test ) )
+observer("state.test", () => alert("Test Changes to: " + state.test))
+         |__________|  |____________________________________________|
+        State: string                   Function
+
+PS: you need to use the name of state | store as string
 ```
 
-You can use it everywere. Works like "useState" in react but with more flexibility ( use one observer each state! )
+You can use it everywhere. Works like "useState" in React but with more flexibility (use one observer for each state!).
 
-### example:
+### Example:
 
 ```javascript
 import 'dphelper';
 
 // Use the observer to log the changing state value
-observer('count', () => {
-  console.log("state changed: ", state.count);
-});
+observer(
+  'state.count',
+  () => console.log("State changed: ", state.count)
+);
 
 // Store a value in the state that changes every 5 seconds
-setInterval(() => {
-  state.count = Date.now();
-}, 5000);
-
+setInterval(() => state.count = Date.now(), 5000);
 ```
-#### another simple example:
+
+#### Another Simple Example:
 
 ```javascript
 import 'dphelper';
@@ -186,7 +190,7 @@ state.myData = 'New value';
 
 ### Persistent Storage with dpHelper
 
-When using dpHelper for permanent storage, you should use the **store** instead of **state**. This is because store utilizes localStorage, which stores data persistently across sessions.
+When using dpHelper for permanent storage, you should use the **store**, which stores data persistently across sessions.
 
 #### Important Security Note
 
@@ -198,20 +202,19 @@ When using dpHelper for permanent storage, you should use the **store** instead 
 
 ```javascript
 // Set a store:
-store.set("test", { test:"test" })
+store.set("test", { test: "test" })
 
 // Get a store:
-store.get("test") // Output: { test:"test" }
+store.get("test") // Output: { test: "test" }
 
 // Remove a store:
 store.delete("test") // Output: "ok"
 
 // Remove all stores:
 store.clearAll() // Output: "ok"
-
 ```
 
-### example in react
+### Example in React
 
 ```javascript
 import React, { useEffect } from 'react';
@@ -230,8 +233,8 @@ function App() {
 
   // Use the stored value in a React component
   useEffect(() => {
-    console.log( store.get("user") ); // Output: { name: "John Doe", age: 30 }
-    $("#name").text( store.get("user").name )
+    console.log(store.get("user")); // Output: { name: "John Doe", age: 30 }
+    $("#name").text(store.get("user").name)
   }, []);
 
   // Clear all stored data if necessary
@@ -247,11 +250,9 @@ function App() {
 export default App;
 ```
 
----
-
 ## Usage
 
-install dpHelper.
+Install dpHelper.
 
 ```shell
 npm i dphelper --save-dev
@@ -262,8 +263,8 @@ or update:
 ```shell
 npm i dphelper@latest --save-dev
 ```
----
-Use it in the in main root file (and only there):
+
+Use it in the main root file (and only there):
 
 ```javascript
 import "dphelper";
@@ -275,47 +276,40 @@ or
 require("dphelper");
 ```
 
-## Install for ejs or other type of projects (like html)
+## Install for EJS or Other Types of Projects (like HTML)
 
-note: you don't need to use npm install in this case or you get an error
+Note: You don't need to use npm install in this case, or you will get an error.
 
 ```html
 <script src="https://unpkg.com/dphelper@latest/index.js"></script>
 ```
 
-## Console it!
+## Console It!
 
-type **dphelper** in the devtool console of your browser to have a look about all available & tools that you can use!
-
-You can call these from everywhere without import (just one time in main / root page)
-
----
+Type **dphelper** in the devtool console of your browser to have a look at all available tools that you can use! You can call these from everywhere without import (just one time in the main/root page).
 
 ## Browser Extension (Chrome/Edge) ♥️
+
 ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
 
-![dpHelper Banner](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/images/banner.png)
+![dphelper Banner](https://raw.githubusercontent.com/passariello/container/refs/heads/main/dphelper/assets/images/banner.png)
 
-![dpHelper Banner](https://raw.githubusercontent.com/passariello/dphelper/HEAD/assets/images/screenshot.png)
+![dphelper Banner](https://raw.githubusercontent.com/passariello/container/refs/heads/main/dphelper/assets/images/screenshot.png)
 
 Chrome: [Download from Google Web Store](https://chrome.google.com/webstore/detail/dphelper-manager-dev-tool/oppppldaoknfddeikfloonnialijngbk)
 
 Edge: [Download from Microsoft Addons](https://microsoftedge.microsoft.com/addons/detail/dphelper-manager-dev-to/kphabkbdpaljlfagldhojilhfammepnk)
 
-PS: **dphelper** is compatible with all Chronium base browser like **Brave** too!
+PS: **dpHelper** is compatible with all Chromium-based browsers like **Brave** too!
 
 ## dpHelper Browser Extension
 
 The dpHelper browser extension allows you to manage your application's dpHelper NPM. Key features include:
 
 1. Simplified API operations: Easily manage and manipulate data with dpHelper's collection of scripts.
-
 2. Real-time monitoring: Track memory usage and localStorage to optimize your application's performance.
-
 3. Stay up-to-date: Receive updates and tips to improve your daily workflow.
-
 4. Easy installation: Simply import 'dphelper' in your project index to get started.
-
 5. Global accessibility: All scripts are available globally and can be accessed from anywhere in your application.
 
 ## Check
@@ -326,7 +320,12 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 ## License
 
- [MIT](https://en.wikipedia.org/wiki/MIT_License)
+[MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
+
+- [LICENCE](LICENCE)
+- [CODE OF CONDUCT](CODE_OF_CONDUCT.md)
+- [SECURITY](SECURITY.md)
+- [CONTRIBUTING](CONTRIBUTING.md)
 
 ---
 

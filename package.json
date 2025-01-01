@@ -1,11 +1,11 @@
 {
   "name": "dphelper",
-  "version": "1.8.17",
+  "version": "1.8.40",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
   "folder": "/",
-  "main": "./index.ts",
+  "main": "./index.js",
   "typeID": 0,
   "theme": "default",
   "deprecated": false,
@@ -24,7 +24,6 @@
     "name": "dphelper",
     "type": "beta",
     "folder": "/",
-    "main": "index.ts",
     "target": "web",
     "proxy": {
       "api": {
@@ -70,11 +69,6 @@
   "workspaces": [
     "mcp"
   ],
-  "cordova": {
-    "platforms": [
-      "android"
-    ]
-  },
   "npmName": "dphelper",
   "npmFileMap": [
     {
@@ -115,9 +109,6 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "keywords": [
     "helper",
     "dphelper",
@@ -132,7 +123,7 @@
     "powerful",
     "state",
     "status",
-    "dpHelper",
+    "dphelper",
     "dp helper",
     "helper",
     "local",
@@ -172,7 +163,10 @@
     "---": "------------",
     "pack": "cd dist && npm pack",
     "backup": "cd mcp/batch && backup.bat",
-    "update": "cd mcp/javascripts && node npmUpdate"
+    "update": "cd mcp/javascripts && node npmUpdate.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "devDependencies": {
     "@types/webpack-env": "1.18.5",
@@ -180,13 +174,12 @@
     "crypto-js": "4.2.0",
     "file-loader": "6.2.0",
     "jquery": "3.7.1",
-    "terser-webpack-plugin": "^5.3.10",
+    "terser-webpack-plugin": "^5.3.11",
     "ts-loader": "^9.5.1",
     "ts-node": "10.9.2",
     "typescript": "5.7.2",
     "webpack": "^5.97.1",
-    "webpack-cli": "5.1.4",
-    "webpack-dev-server": "^5.2.0",
-    "x2js": "3.4.4"
+    "webpack-cli": "6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
