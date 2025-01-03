@@ -11,6 +11,17 @@
 */
 interface _state {
 
+  /**
+   * Create states using: state.test = "example"
+   *
+   * @example
+   * state.myStuff = any
+   *
+   * @since dphelper 0.0.1
+   * @param key The name of the state for which you want to modify the action.
+   * @return The previous values (Any).
+   * Important: Object is a Proxy.
+   */
   [key: string]: any
 
   /**
@@ -45,16 +56,5 @@ interface _state {
 
 }
 
-/**
-* Create states using: state.test = "example"
-*
-* @example
-* state.myStuff = any
-*
-* @since dphelper 0.0.1
-* @param key The name of the state for which you want to modify the action.
-* @return The previous values (Any).
-* Important: Object is a Proxy.
-*/
 declare var state: _state
 type state = _state

@@ -55,10 +55,10 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](/STATE.md)
-- [Store](/STORE_file.md)
-- [Observer](/OBSERVER.md)
-- [List of functions](/LIST.md)
+- [State](https://github.com/passariello/dpHelper/blob/main/STATE.md)
+- [Store](https://github.com/passariello/dpHelper/blob/main/STORE.md)
+- [Observer](https://github.com/passariello/dpHelper/blob/main/OBSERVER.md)
+- [List of functions](https://github.com/passariello/dpHelper/blob/main/LIST.md)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
 
@@ -322,11 +322,11 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 [MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
 
-- [LICENCE](LICENCE)
-- [CODE OF CONDUCT](CODE_OF_CONDUCT.md)
-- [SECURITY](SECURITY.md)
-- [CONTRIBUTING](CONTRIBUTING.md)
+- [LICENCE](https://github.com/passariello/dpHelper/blob/main/LICENCE)
+- [CODE OF CONDUCT](https://github.com/passariello/dpHelper/blob/main/CODE_OF_CONDUCT.md)
+- [SECURITY](https://github.com/passariello/dpHelper/blob/main/SECURITY.md)
+- [CONTRIBUTING](https://github.com/passariello/dpHelper/blob/main/CONTRIBUTING.md)
 
 ---
 
-Dario Passariello, All rights reserved - Copyright (c) 2019 - 2024
+Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024

@@ -191,8 +191,6 @@ interface _dphelper {
     phoneNumber: (value: string, countryCode?: string) => string
   }
 
-  idb: any,
-
   imports: {
     file: (elem: string, file: string) => Promise<void>
   }
@@ -262,13 +260,6 @@ interface _dphelper {
     isObject: (val: any) => boolean
     diff: (obj1: Record<string, any>, obj2: Record<string, any>) => Record<string, { obj1: any, obj2: any }>
     path: (prop: string, array: string[], separator?: string) => string
-  }
-
-  observer: {
-    (stateName: string, callBack?: Function, option?: object): void
-    list: () => any
-    remove: (name: string) => void
-    removeAll: () => void
   }
 
   path: {
@@ -358,8 +349,6 @@ interface _dphelper {
   system: {
     multiSplit: () => any
   }
-
-  termina: () => Terminal
 
   text: {
     trim(s: string, c: string, b: number, e: number): string
