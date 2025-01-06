@@ -318,9 +318,9 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 [MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
 
 * [LICENCE](../LICENCE/)
-* [CODE OF CONDUCT](code_of_conduct.md)
-* [SECURITY](security.md)
-* [CONTRIBUTING](contributing.md)
+* [CODE OF CONDUCT](../CODE_OF_CONDUCT.md)
+* [SECURITY](../SECURITY.md)
+* [CONTRIBUTING](../CONTRIBUTING.md)
 
 ***
 

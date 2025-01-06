@@ -322,9 +322,9 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 [MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
 
 * [LICENCE](LICENCE/)
-* [CODE OF CONDUCT](docs/code_of_conduct.md)
-* [SECURITY](docs/security.md)
-* [CONTRIBUTING](docs/contributing.md)
+* [CODE OF CONDUCT](CODE_OF_CONDUCT.md)
+* [SECURITY](SECURITY.md)
+* [CONTRIBUTING](CONTRIBUTING.md)
 
 ***
 
