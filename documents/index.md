@@ -52,10 +52,10 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 
 You can see:
 
-* [State](../STATE.md)
-* [Store](../STORE.md)
-* [Observer](../OBSERVER.md)
-* [List of functions](../LIST.md)
+* [State](../general/state.md)
+* [Store](../general/store.md)
+* [Observer](../general/observer.md)
+* [List of functions](../general/list.md)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
 
@@ -318,9 +318,9 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 [MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
 
 * [LICENCE](../LICENCE/)
-* [CODE OF CONDUCT](../CODE_OF_CONDUCT.md)
-* [SECURITY](../SECURITY.md)
-* [CONTRIBUTING](../CONTRIBUTING.md)
+* [CODE OF CONDUCT](code_of_conduct.md)
+* [SECURITY](security.md)
+* [CONTRIBUTING](contributing.md)
 
 ***
 

@@ -1,13 +1,18 @@
 # Table of contents
 
 * [dpHelper](README.md)
-* [dpHelper Observer](OBSERVER.md)
-* [dpHelper State](STATE.md)
-* [dpHelper Store](STORE.md)
-* [All Functions List](LIST.md)
-* [General](docs/README.md)
-  * [dpHelper](docs/index.md)
-  * [Security](SECURITY.md)
-  * [Contributing to dphelper](CONTRIBUTING.md)
-  * [Code of Conduct - dphelper](CODE_OF_CONDUCT.md)
-  * [CHANGELOG](CHANGELOG.md)
+
+## general
+
+* [dpHelper Store](general/store.md)
+* [dpHelper State](general/state.md)
+* [dpHelper Observer](general/observer.md)
+* [All Functions List](general/list.md)
+
+## documents
+
+* [dpHelper](documents/index.md)
+* [Security](documents/security.md)
+* [Contributing to dphelper](documents/contributing.md)
+* [Code of Conduct - dphelper](documents/code_of_conduct.md)
+* [CHANGELOG](documents/changelog.md)
