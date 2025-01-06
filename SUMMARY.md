@@ -1,6 +1,7 @@
 # Table of contents
 
 * [dpHelper](README.md)
+* [dpHelper](index.md)
 
 ## general
 
@@ -11,8 +12,7 @@
 
 ## documents
 
-* [dpHelper](documents/index.md)
+* [CHANGELOG](documents/changelog.md)
 * [Security](documents/security.md)
 * [Contributing to dphelper](documents/contributing.md)
-* [Code of Conduct - dphelper](documents/code_of_conduct.md)
-* [CHANGELOG](documents/changelog.md)
+* [Code of Conduct](documents/code_of_conduct.md)
