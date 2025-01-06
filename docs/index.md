@@ -4,14 +4,9 @@
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
-[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
-[![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
-[![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
+[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper) [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper) [![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper) [![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
-![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper&logoColor=white)
-![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript\&logoColor=white) ![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper\&logoColor=white) ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
 
 ## About 🔥
 
@@ -47,6 +42,7 @@ export default App;
 [https://a51.dev/tests/](https://a51.dev/tests/)
 
 You can see an HTML version where dpHelper and LayerPro work together seamlessly. dpHelper is compatible with a variety of frontend libraries, including:
+
 * HTML
 * React
 * Vue
@@ -55,10 +51,11 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](https://github.com/passariello/dpHelper/blob/main/STATE.md)
-- [Store](https://github.com/passariello/dpHelper/blob/main/STORE.md)
-- [Observer](https://github.com/passariello/dpHelper/blob/main/OBSERVER.md)
-- [List of functions](https://github.com/passariello/dpHelper/blob/main/LIST.md)
+
+* [State](../STATE.md)
+* [Store](../STORE.md)
+* [Observer](../OBSERVER.md)
+* [List of functions](../LIST.md)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
 
@@ -91,7 +88,7 @@ Modern browsers and applications use a **"NO REFRESH" behavior**, where only the
 
 #### You can find more information and related topics at the following links:
 
-[Ajax_(programming)](https://en.wikipedia.org/wiki/Ajax_(programming))
+[Ajax\_(programming)](https://en.wikipedia.org/wiki/Ajax_\(programming\))
 
 [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
 
@@ -195,9 +192,7 @@ When using dpHelper for permanent storage, you should use the **store**, which s
 #### Important Security Note
 
 1. **Use store for persistent storage:** If you want to store data permanently, use store to ensure it is saved in localStorage.
-
 2. **Remove data when necessary:** To maintain security, remove stored data when it is no longer needed, such as during logout.
-
 3. **Clear all stored data:** Use store.clearAll() to securely remove all stored data from your application.
 
 ```javascript
@@ -320,13 +315,13 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 ## License
 
-[MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
+[MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
 
-- [LICENCE](https://github.com/passariello/dpHelper/blob/main/LICENCE)
-- [CODE OF CONDUCT](https://github.com/passariello/dpHelper/blob/main/CODE_OF_CONDUCT.md)
-- [SECURITY](https://github.com/passariello/dpHelper/blob/main/SECURITY.md)
-- [CONTRIBUTING](https://github.com/passariello/dpHelper/blob/main/CONTRIBUTING.md)
+* [LICENCE](../LICENCE/)
+* [CODE OF CONDUCT](code_of_conduct.md)
+* [SECURITY](security.md)
+* [CONTRIBUTING](contributing.md)
 
----
+***
 
 Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024
