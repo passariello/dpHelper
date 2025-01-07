@@ -1,16 +1,17 @@
----
-icon: hand-wave
----
-
 # dpHelper
 
 ![dpHelper](https://raw.githubusercontent.com/passariello/container/92b999bad3a5e68d6e6ec800c3974383dba16244/dphelper/assets/images/banner.svg)
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
-[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper) [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper) [![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper) [![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
+[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
+[![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
+[![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript\&logoColor=white) ![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper\&logoColor=white) ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
+![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper&logoColor=white)
+![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
 
 ## About 🔥
 
@@ -22,21 +23,21 @@ dpHelper is a precise and complete collection of 190+ tools ready to use in all 
 import React, { useEffect } from 'react';
 import 'dphelper';
 
-function App() {
-  // Store a value in the state
-  state.test = 'Hello, World!';
+  function App() {
+    // Store a value in the state
+    state.test = 'Hello, World!';
 
-  // Use the stored value in a React component
-  useEffect(() => {
-    console.log("You can recall from all pages: " + state.test); // Output: "Hello, World!"
-  }, []);
+    // Use the stored value in a React component
+    useEffect(() => {
+      console.log("You can recall from all pages: " + state.test); // Output: "Hello, World!"
+    }, []);
 
-  return (
-    <div>
-      <h1>{state.test}</h1>
-    </div>
-  );
-}
+    return (
+      <div>
+        <h1>{state.test}</h1>
+      </div>
+    );
+  }
 
 export default App;
 ```
@@ -46,7 +47,6 @@ export default App;
 [https://a51.dev/tests/](https://a51.dev/tests/)
 
 You can see an HTML version where dpHelper and LayerPro work together seamlessly. dpHelper is compatible with a variety of frontend libraries, including:
-
 * HTML
 * React
 * Vue
@@ -55,13 +55,12 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
+- [State]([clicking here](https://biglogic-organization.gitbook.io/dphelper-devtools/general/state)
+- [Store](https://biglogic-organization.gitbook.io/dphelper-devtools/general/store)
+- [Observer](https://biglogic-organization.gitbook.io/dphelper-devtools/general/observer)
+- [List of functions](https://biglogic-organization.gitbook.io/dphelper-devtools/general/list)
 
-* [State](general/state.md)
-* [Store](general/store.md)
-* [Observer](general/observer.md)
-* [List of functions](general/list.md)
-
-You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.github.io/dphelper/).
+You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://biglogic-organization.gitbook.io/dphelper-devtools).
 
 ## What You Need to Know About "No-Refresh/Reload" 🧐
 
@@ -92,7 +91,7 @@ Modern browsers and applications use a **"NO REFRESH" behavior**, where only the
 
 #### You can find more information and related topics at the following links:
 
-[Ajax\_(programming)](https://en.wikipedia.org/wiki/Ajax_\(programming\))
+[Ajax_(programming)](https://en.wikipedia.org/wiki/Ajax_(programming))
 
 [SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
 
@@ -122,7 +121,7 @@ state.test = "I am ready";
 state.test
 
 // List all states
-state.list // or just state
+state.list // or just "state" to see the proxy
 
 // Remove a state
 state.remove("test")
@@ -143,9 +142,9 @@ If you want to run a function every time a state changes, you can use:
 * @parameters
 * [ state | store, function ]
 */
-observer("state.test", () => alert("Test Changes to: " + state.test))
-         |__________|  |____________________________________________|
-        State: string                   Function
+observer( "state.test", () => alert("Test Changes to: " + state.test) )
+          |__________|  |___________________________________________|
+          State: string                   Function
 
 PS: you need to use the name of state | store as string
 ```
@@ -196,7 +195,9 @@ When using dpHelper for permanent storage, you should use the **store**, which s
 #### Important Security Note
 
 1. **Use store for persistent storage:** If you want to store data permanently, use store to ensure it is saved in localStorage.
+
 2. **Remove data when necessary:** To maintain security, remove stored data when it is no longer needed, such as during logout.
+
 3. **Clear all stored data:** Use store.clearAll() to securely remove all stored data from your application.
 
 ```javascript
@@ -231,10 +232,12 @@ function App() {
   );
 
   // Use the stored value in a React component
-  useEffect(() => {
-    console.log(store.get("user")); // Output: { name: "John Doe", age: 30 }
-    $("#name").text(store.get("user").name)
-  }, []);
+  useEffect(
+    () => {
+      console.log(store.get("user")); // Output: { name: "John Doe", age: 30 }
+      $("#name").text(store.get("user").name)
+    }, []
+  );
 
   // Clear all stored data if necessary
   // store.clearAll();
@@ -319,13 +322,13 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 ## License
 
-[MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
+[MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
 
-* [LICENCE](LICENCE/)
-* [CODE OF CONDUCT](documents/code_of_conduct.md)
-* [SECURITY](documents/security.md)
-* [CONTRIBUTING](documents/contributing.md)
+- [LICENCE](https://biglogic-organization.gitbook.io/dphelper-devtools/documents/license)
+- [CODE OF CONDUCT](https://biglogic-organization.gitbook.io/dphelper-devtools/documents/code_of_conduct)
+- [SECURITY](https://biglogic-organization.gitbook.io/dphelper-devtools/documents/security)
+- [CONTRIBUTING](https://biglogic-organization.gitbook.io/dphelper-devtools/documents/contributing)
 
-***
+---
 
 Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024

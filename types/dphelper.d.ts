@@ -320,14 +320,14 @@ interface _dphelper {
 
   socket: {
     info: () => string
-    start: (element: any, server: any) => void
-    conn: (id: any, server: any) => [WebSocket, any]
-    connect: (server: any) => void
-    open: (id: any, server: any) => void
+    start: (element: any, server: any, name: string) => void
+    conn: (id: any, server: any, name: string) => void
+    connect: (server: any, name: string) => void
+    open: (id: any, server: any, name: string) => void
     send: (mex: any, type?: string) => void
-    ping: () => void
-    receive: (el?: any) => void
-    keepAlive: () => void
+    ping: (name: string) => void
+    receive: (el?: any, name: string) => void
+    keepAlive: (name: string) => void
     check: () => void
     list: () => WebSocket[]
   }
@@ -438,3 +438,5 @@ interface Description {
   active: boolean,
   subCommand: Array<SubCommand>,
 }
+
+declare function confirm(message: string, func1: Function, func2?: Function): boolean

@@ -5,7 +5,7 @@ This document provides a comprehensive list of all available store functions in 
 
 ## Functions
 
-### get
+### store.get([store.name])
 - **Description:** Retrieve an item from local storage.
 - **Parameters:**
   - `name` (string): The name of the item to retrieve.
@@ -15,7 +15,7 @@ This document provides a comprehensive list of all available store functions in 
   console.log(value);
   ```
 
-### set
+### store.set([name, value])
 - **Description:** Set an item in local storage.
 - **Parameters:**
   - `name` (string): The name of the item to set.
@@ -25,7 +25,7 @@ This document provides a comprehensive list of all available store functions in 
   store.set('itemName', value);
   ```
 
-### delete
+### store.delete([store.name])
 - **Description:** Delete an item from local storage.
 - **Parameters:**
   - `name` (string): The name of the item to delete.
@@ -34,7 +34,7 @@ This document provides a comprehensive list of all available store functions in 
   store.delete('itemName');
   ```
 
-### clearAll
+### store.clearAll()
 - **Description:** Clear all items from local storage.
 - **Parameters:** None
 - **Example:**
@@ -42,7 +42,7 @@ This document provides a comprehensive list of all available store functions in 
   store.clearAll();
   ```
 
-### quota
+### store.quota()
 - **Description:** Estimate the storage quota and usage.
 - **Parameters:** None
 - **Example:**
@@ -51,7 +51,7 @@ This document provides a comprehensive list of all available store functions in 
   console.log(quota);
   ```
 
-### size
+### store.size()
 - **Description:** Calculate the total size of all items in local storage.
 - **Parameters:** None
 - **Example:**

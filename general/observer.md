@@ -1,11 +1,11 @@
-# dpHelper Observer
+# Observer
 
 ## Overview
 This document provides a comprehensive list of all available observer functions in the `dphelper` library along with their descriptions and examples.
 
 ## Functions
 
-### observer
+### observer([state.name], [function])
 - **Description:** Sets up an observer to monitor state changes and trigger a callback.
 - **Parameters:**
   - `stateName` (string): The name of the state to monitor.
@@ -18,7 +18,7 @@ This document provides a comprehensive list of all available observer functions 
   });
   ```
 
-### recall
+### observer([state.name])
 - **Description:** Recall the observer previously generated.
 - **Returns:** Console log with a note
 - **Example:**
@@ -26,12 +26,12 @@ This document provides a comprehensive list of all available observer functions 
   observer('state.test');
   ```
 
-### list
+### observer.list
 - **Description:** See the list of all your observer (eventListener) actually installed.
 - **Returns:** The list of all installed observers.
 - **Example:**
   ```javascript
-  observer.list();
+  observer.list;
   ```
 
 ### remove

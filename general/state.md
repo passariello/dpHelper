@@ -5,7 +5,7 @@ This document provides a comprehensive list of all available state functions in 
 
 ## Functions
 
-### state
+### state.[state.name] ex: _state.test_
 - **Description:** Set and get state values.
 - **Example:**
   ```javascript
@@ -16,14 +16,14 @@ This document provides a comprehensive list of all available state functions in 
   const value = state.name;
   ```
 
-### list
+### state.list
 - **Description:** Show all states out of proxy.
 - **Example:**
   ```javascript
   state.list;
   ```
 
-### remove
+### state.remove([state.name])
 - **Description:** Remove a state.
 - **Parameters:**
   - `name` (string): The name of the state to remove.

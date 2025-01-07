@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.8.44",
+  "version": "1.8.49",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -40,14 +40,14 @@
       }
     },
     "url": {
-      "dev": "http://localhost"
+      "dev": "http://localhost/"
     },
     "cdn": {}
   },
-  "homepage": "https://github.com/passariello/dphelper",
+  "homepage": "https://biglogic-organization.gitbook.io/dphelper-devtools/",
   "author": {
     "name": "Dario Passariello",
-    "url": "https://github.com/passariello/",
+    "url": "https://dario.passariello.ca/",
     "email": "dariopassariello@gmail.com"
   },
   "support": {
@@ -136,7 +136,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/passariello/dphelper",
+    "url": "https://github.com/passariello/dphelper/",
     "help": "https://github.com/passariello/dphelper#readme"
   },
   "bugs": {
