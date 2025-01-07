@@ -113,8 +113,6 @@ interface _dphelper {
     mapDegreesToPixels: (degree: number, minDegree: number, maxDegree: number, minPixel: number, maxPixel: number, padding: number) => number
   }
 
-  credits: Function
-
   date: {
     days: (lang?: string) => string[]
     months: (lang?: string) => string[]

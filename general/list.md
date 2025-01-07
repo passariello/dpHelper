@@ -131,10 +131,6 @@ This document provides a comprehensive list of all available functions in the `d
 - `dphelper.coods.mapDegreesToPixels(degree: number, minDegree: number, maxDegree: number, minPixel: number, maxPixel: number, padding: number): number`
   <br>**Description:** Maps degrees to pixels.
 
-### Credits
-- `dphelper.credits: Function`
-  <br>**Description:** Displays credits.
-
 ### Date
 - `dphelper.date.days(lang?: string): string[]`
   <br>**Description:** Returns the days of the week in a specified language.
