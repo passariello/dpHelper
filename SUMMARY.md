@@ -11,8 +11,12 @@
 
 ## documents
 
-* [Code of Conduct](documents/code_of_conduct.md)
-* [Contributing](documents/contributing.md)
-* [Security](documents/security.md)
 * [License](documents/license.md)
+* [Contributing](documents/contributing.md)
+* [Code of Conduct](documents/code_of_conduct.md)
+* [Security](documents/security.md)
+
+## changes
+
 * [changelog](documents/changelog.md)
+* [history](documents/history.md)
