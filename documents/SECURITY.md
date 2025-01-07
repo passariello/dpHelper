@@ -1,5 +1,7 @@
 # Security Policy
 
+Please email @passariello or see https://dario.passariello.ca/contact/ if you have a potential security vulnerability to report.
+
 ## Supported Versions
 
 Use this section to tell people about which versions of your project are
