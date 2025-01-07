@@ -9,10 +9,10 @@
 * [Observer](general/observer.md)
 * [All Functions List](general/list.md)
 
-## document
+## documents
 
-* [Code of Conduct](document/code_of_conduct.md)
-* [Contributing](document/contributing.md)
-* [Security](document/security.md)
-* [License](document/license.md)
-* [changelog](document/changelog.md)
+* [Code of Conduct](documents/code_of_conduct.md)
+* [Contributing](documents/contributing.md)
+* [Security](documents/security.md)
+* [License](documents/license.md)
+* [changelog](documents/changelog.md)
