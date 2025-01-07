@@ -4,10 +4,10 @@
 
 ## General
 
-* [dpHelper Store](general/store.md)
-* [dpHelper State](general/state.md)
+* [Store](general/store.md)
+* [State](general/state.md)
 * [Observer](general/observer.md)
-* [All Functions List](general/list.md)
+* [All Functions](general/list.md)
 
 ## documents
 
