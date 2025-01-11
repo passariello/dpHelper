@@ -50,6 +50,10 @@ This document provides a comprehensive list of all available functions in the `d
   <br>**Description:** Creates a deep clone of an object.
 - `dphelper.array.match(arrayWords: any[], arrayToCheck: any[]): boolean`
   <br>**Description:** Checks if two arrays match.
+- `dphelper.array.shallow(array: any[]): any[]`
+  <br>**Description:** Generate a shallow copy of an object.
+- `dphelper.array.deeCopy(array: any[]): any[]`
+  <br>**Description:** Generate a structured copy of an object.
 
 ### Audio
 - `dphelper.audio.play(url: string): void`
@@ -346,22 +350,26 @@ This document provides a comprehensive list of all available functions in the `d
   <br>**Description:** Sorts an object.
 - `dphelper.obj.toXML(obj: Record<string, any>): string`
   <br>**Description:** Converts an object to XML.
-- `dphelper.obj.find(array: any[], key: string, value: any): any`
-  <br>**Description:** Finds an element in an array by key and value.
+- `dphelper.obj.find(object: any[], key: string, value: any): any`
+  <br>**Description:** Finds an element in an object by key and value.
 - `dphelper.obj.instance(obj: any): any`
   <br>**Description:** Returns the instance of an object.
 - `dphelper.obj.updateByKey(obj: Record<string, any>, key: string, newValue: any): Record<string, any>`
   <br>**Description:** Updates an object by key.
-- `dphelper.obj.findindex(array: any[], key: string): number`
-  <br>**Description:** Finds the index of an element in an array by key.
+- `dphelper.obj.findindex(object: any[], key: string): number`
+  <br>**Description:** Finds the index of an element in an object by key.
 - `dphelper.obj.parse(val: any): any`
   <br>**Description:** Parses a value.
 - `dphelper.obj.isObject(val: any): boolean`
   <br>**Description:** Checks if a value is an object.
 - `dphelper.obj.diff(obj1: Record<string, any>, obj2: Record<string, any>): Record<string, { obj1: any, obj2: any }>`
   <br>**Description:** Finds the difference between two objects.
-- `dphelper.obj.path(prop: string, array: string[], separator?: string): string`
+- `dphelper.obj.path(prop: string, object: string[], separator?: string): string`
   <br>**Description:** Converts a property path to a string.
+- `dphelper.obj.shallow(object: Object): Object`
+  <br>**Description:** Generate a shallow copy of an object.
+- `dphelper.obj.deeCopy(object: Object): Object`
+  <br>**Description:** Generate a structured copy of an object.
 
 ### Path
 - `dphelper.path.rail(): string[]`
