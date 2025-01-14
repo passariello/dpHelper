@@ -55,12 +55,12 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
-- [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
-- [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
-- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/list)
+- [State](https://passariello.gitbook.io/dphelper-devtools/documents/state)
+- [Store](https://passariello.gitbook.io/dphelper-devtools/documents/store)
+- [Observer](https://passariello.gitbook.io/dphelper-devtools/documents/observer)
+- [List of functions](https://passariello.gitbook.io/dphelper-devtools/documents/list)
 
-You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools).
+You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools/).
 
 ## What You Need to Know About "No-Refresh/Reload" 🧐
 
@@ -113,9 +113,10 @@ _example:_
 
 You can use the browser's devtools console and type " **state.test = 'I am ready'** ". Every time you want to use '**test**' values, you need just recall **state.test**.
 
+
 ```javascript
 // Set a state
-state.test = "I am ready";
+state.test = "I am ready"; //:any (object, array, number, string, boolean, function)
 
 // Get the state
 state.test
@@ -142,9 +143,10 @@ If you want to run a function every time a state changes, you can use:
 * @parameters
 * [ state | store, function ]
 */
+
 observer( "state.test", () => alert("Test Changes to: " + state.test) )
           |__________|  |___________________________________________|
-          State: string                   Function
+             String                      Function
 
 PS: you need to use the name of state | store as string
 ```
@@ -163,7 +165,10 @@ observer(
 );
 
 // Store a value in the state that changes every 5 seconds
-setInterval(() => state.count = Date.now(), 5000);
+setInterval(
+  () => state.count = Date.now(),
+  5000
+);
 ```
 
 #### Another Simple Example:
@@ -172,10 +177,12 @@ setInterval(() => state.count = Date.now(), 5000);
 import 'dphelper';
 
 // Set a state
-state.myData = 'Hello, world!';
+state.myData = {
+  test: "Hello, world!"
+};
 
 // Retrieve the state
-console.log(state.myData); // Output: Hello, world!
+console.log(state.myData); // Output: {test: "Hello, world!"} as object
 
 // Observe state changes
 observer('myData', () => {
@@ -183,7 +190,9 @@ observer('myData', () => {
 });
 
 // Change the state
-state.myData = 'New value';
+state.myData = {
+  newValue: "New value"
+};
 ```
 
 ## The Best Way To Use Store 🫙
@@ -324,11 +333,11 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 [MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
 
-- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/documents/license)
-- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/documents/code_of_conduct)
-- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/documents/security)
-- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/documents/contributing)
+- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/license)
+- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/code_of_conduct)
+- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/security)
+- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/contributing)
 
 ---
 
-Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024
+Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2025

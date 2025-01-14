@@ -1,24 +1,22 @@
 # Table of contents
 
 * [dpHelper](README.md)
-* [Test](test/README.md)
-  * [Test](test/test.md)
 
 ## General
 
-* [Store](general/store.md)
-* [State](general/state.md)
-* [Observer](general/observer.md)
-* [All Functions](general/list.md)
+* [Store](/document/STORE.md)
+* [State](/document/STATE.md)
+* [Observer](/document/OBSERVER.md)
+* [All Functions](/document/TOOLS.md)
 
 ## documents
 
-* [License](documents/license.md)
-* [Contributing](documents/contributing.md)
-* [Code of Conduct](documents/code_of_conduct.md)
-* [Security](documents/security.md)
+* [License](LICENSE.md)
+* [Contributing](CONTRIBUTING.md)
+* [Code of Conduct](CODE_OF_CONDUCT.md)
+* [Security](SECURITY.md)
 
 ## changes
 
-* [changelog](documents/changelog.md)
-* [history](documents/history.md)
+* [Changelog](CAHNGELOG.md)
+* [History](HISTORY.md)
