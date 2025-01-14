@@ -4,10 +4,10 @@
 
 ## General
 
-* [Store](/document/STORE.md)
-* [State](/document/STATE.md)
-* [Observer](/document/OBSERVER.md)
-* [All Functions](/document/TOOLS.md)
+* [Store](/documents/STORE.md)
+* [State](/documents/STATE.md)
+* [Observer](/documents/OBSERVER.md)
+* [All Functions](/documents/TOOLS.md)
 
 ## documents
 
