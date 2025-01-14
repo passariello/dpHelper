@@ -1,6 +1,8 @@
 # Table of contents
 
 * [dpHelper](README.md)
+* [Test](test/README.md)
+  * [Test](test/test.md)
 
 ## General
 
@@ -20,5 +22,3 @@
 
 * [changelog](documents/changelog.md)
 * [history](documents/history.md)
-* [Test](changes/test/README.md)
-  * [Test](changes/test/test.md)
