@@ -1,8 +1,6 @@
 # Table of contents
 
 * [dpHelper](README.md)
-* [Test](test/README.md)
-  * [Test](test/test.md)
 
 ## General
 
