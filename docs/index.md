@@ -55,14 +55,14 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](https://passariello.gitbook.io/dphelper-devtools/documents/state)
-- [Store](https://passariello.gitbook.io/dphelper-devtools/documents/store)
-- [Observer](https://passariello.gitbook.io/dphelper-devtools/documents/observer)
-- [List of functions](https://passariello.gitbook.io/dphelper-devtools/documents/list)
+- [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
+- [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
+- [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
+- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/list)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools/).
 
-## What You Need to Know About "No-Refresh/Reload" 🧐
+## What About "No-Refresh/Reload" 🧐
 
 ### dpHelper Compatibility and AJAX Technology
 
