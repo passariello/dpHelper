@@ -20,7 +20,7 @@ interface _dphelper {
    */
   // [key: string]: any
 
-  _dphelper: any
+  // _dphelper: any
 
   [_list: string]: any
 
