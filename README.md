@@ -58,7 +58,7 @@ You can see:
 - [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
 - [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
 - [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
-- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/list)
+- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/tools)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools/).
 

@@ -422,6 +422,8 @@ This document provides a comprehensive list of all available functions in the `d
   <br>**Description:** Generates an AES key.
 - `dphelper.security.SHA256_Hex(passKey: string): string`
   <br>**Description:** Generates a SHA256 hash.
+- `dphelper.security.ulid(): string`
+  <br>**Description:** Generates ULID (Universally Unique Lexicographically Sortable Identifier).
 
 ### Shortcut
 - `dphelper.shortcut.keys(e: any, trigger: any): void`
