@@ -1,13 +1,13 @@
 # Table of contents
 
-* [dpHelper](README.md)
+* [🔥 dpHelper](README.md)
 
 ## General
 
-* [Store](/documents/STORE.md)
-* [State](/documents/STATE.md)
-* [Observer](/documents/OBSERVER.md)
-* [All Functions](/documents/TOOLS.md)
+* [Store](documents/STORE.md)
+* [State](documents/STATE.md)
+* [Observer](documents/OBSERVER.md)
+* [All Functions](documents/TOOLS.md)
 
 ## documents
 
@@ -18,5 +18,5 @@
 
 ## changes
 
-* [Changelog](CAHNGELOG.md)
+* [Changelog](changes/changelog.md)
 * [History](HISTORY.md)
