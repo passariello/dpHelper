@@ -6,15 +6,15 @@ title: dpHelper
 message: dphelper devtools | tools, store and state management for developers by Dario Passariello
 type: software
 authors:
-  - given-names: 'Dario '
+  - given-names: "Dario "
     family-names: Passariello
     email: dariopassariello@gmail.com
 abstract: >-
   dpHelper is a precise and complete collection of 190+
   tools ready to use in all web/SaaS applications. State and
-  Store Management are now easy and global, accessible
+  Store Management are now easy, accessible
   everywhere in your application, including Ajax or React
-  apps, without the need for extra files or Redux setup.
+  apps, without the need for extra files.
 keywords:
   - dphelper
   - development

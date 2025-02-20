@@ -15,7 +15,13 @@
 
 ## About 🔥
 
-dpHelper is a precise and complete collection of 190+ tools ready to use in all web/SaaS applications. State and Store Management are now easy and global, accessible everywhere in your application, including Ajax or React apps, without the need for extra files or Redux setup.
+dpHelper is a precise and complete collection of 190+ tools ready to use in all web/SaaS applications. State and Store Management are now easy, accessible everywhere in your application, including Ajax or React apps, without the need for extra files.
+
+1. __Single Source of Truth__: The application's entire state is held within a single object in one store, ensuring consistent and accessible state management throughout the app.
+
+2. __State is flexible__: State changes are facilitated exclusively through actions. These actions, which are straightforward JavaScript objects, delineate what has occurred. This methodology ensures that state changes remain predictable.
+
+3. __Changes are made with proxy handle function__: To define state changes, dpHelper employs pure functions as intermediaries. These functions accept the current state as input and produce a new state as output, ensuring predictability and ease of testing in the system.
 
 ### Example in React
 
@@ -58,48 +64,43 @@ You can see:
 - [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
 - [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
 - [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
-- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/list)
+- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/tools)
 
-You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools/).
+You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools).
 
-## What About "No-Refresh/Reload" 🧐
+## Usage
 
-### dpHelper Compatibility and AJAX Technology
+Install dpHelper.
 
-dpHelper is primarily designed to work with websites, SPA, SaaS applications, and portals that use **AJAX/XMLHttpRequest technology**, such as:
+```shell
+npm i dphelper --save-dev
+```
 
-1. PWA (Progressive Web Apps)
-2. SPA (Single-Page Applications)
-3. SaaS
-4. Microservice
+or update:
 
-and more...
+```shell
+npm i dphelper@latest --save-dev
+```
 
-It is also indicated to work with and for:
+Use it in the main root file (and only there):
 
-1. React
-2. jQuery
-3. Angular
-4. Vue
-5. Vanilla
+```javascript
+import "dphelper";
+```
 
-and more...
+or
 
-### What Does This Mean?
+```javascript
+require("dphelper");
+```
 
-Modern browsers and applications use a **"NO REFRESH" behavior**, where only the affected parts of the page are re-rendered, rather than reloading the entire page. This can cause **data loss** when refreshing or reloading the page.
+## Install for EJS or Other Types of Projects (like HTML)
 
-#### You can find more information and related topics at the following links:
+Note: You don't need to use npm install in this case, or you will get an error.
 
-[Ajax_(programming)](https://en.wikipedia.org/wiki/Ajax_(programming))
-
-[SPA (Single-page application)](https://developer.mozilla.org/en-US/docs/Glossary/SPA)
-
-[XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
-
-### Recommendation
-
-If you want to use dpHelper as a data manager, consider using the **store** function in a **non-AJAX engine**. If you need help or more information, feel free to contact me.
+```html
+<script src="https://unpkg.com/dphelper@latest/index.js"></script>
+```
 
 ## The Best Way To Use State 💥
 
@@ -113,10 +114,9 @@ _example:_
 
 You can use the browser's devtools console and type " **state.test = 'I am ready'** ". Every time you want to use '**test**' values, you need just recall **state.test**.
 
-
 ```javascript
 // Set a state
-state.test = "I am ready"; //:any (object, array, number, string, boolean, function)
+state.test = "I am ready";
 
 // Get the state
 state.test
@@ -143,10 +143,9 @@ If you want to run a function every time a state changes, you can use:
 * @parameters
 * [ state | store, function ]
 */
-
 observer( "state.test", () => alert("Test Changes to: " + state.test) )
           |__________|  |___________________________________________|
-             String                      Function
+          State: string                   Function
 
 PS: you need to use the name of state | store as string
 ```
@@ -165,10 +164,7 @@ observer(
 );
 
 // Store a value in the state that changes every 5 seconds
-setInterval(
-  () => state.count = Date.now(),
-  5000
-);
+setInterval(() => state.count = Date.now(), 5000);
 ```
 
 #### Another Simple Example:
@@ -177,12 +173,10 @@ setInterval(
 import 'dphelper';
 
 // Set a state
-state.myData = {
-  test: "Hello, world!"
-};
+state.myData = 'Hello, world!';
 
 // Retrieve the state
-console.log(state.myData); // Output: {test: "Hello, world!"} as object
+console.log(state.myData); // Output: Hello, world!
 
 // Observe state changes
 observer('myData', () => {
@@ -190,9 +184,7 @@ observer('myData', () => {
 });
 
 // Change the state
-state.myData = {
-  newValue: "New value"
-};
+state.myData = 'New value';
 ```
 
 ## The Best Way To Use Store 🫙
@@ -261,40 +253,6 @@ function App() {
 export default App;
 ```
 
-## Usage
-
-Install dpHelper.
-
-```shell
-npm i dphelper --save-dev
-```
-
-or update:
-
-```shell
-npm i dphelper@latest --save-dev
-```
-
-Use it in the main root file (and only there):
-
-```javascript
-import "dphelper";
-```
-
-or
-
-```javascript
-require("dphelper");
-```
-
-## Install for EJS or Other Types of Projects (like HTML)
-
-Note: You don't need to use npm install in this case, or you will get an error.
-
-```html
-<script src="https://unpkg.com/dphelper@latest/index.js"></script>
-```
-
 ## Console It!
 
 Type **dphelper** in the devtool console of your browser to have a look at all available tools that you can use! You can call these from everywhere without import (just one time in the main/root page).
@@ -333,11 +291,11 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 [MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
 
-- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/license)
-- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/code_of_conduct)
-- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/security)
-- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/contributing)
+- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/general/license)
+- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/general/code_of_conduct)
+- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/general/security)
+- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/general/contributing)
 
 ---
 
-Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2025
+Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024
