@@ -1,17 +1,12 @@
-# dpHelper
+# 🔥 dpHelper
 
 ![dpHelper](https://raw.githubusercontent.com/passariello/container/92b999bad3a5e68d6e6ec800c3974383dba16244/dphelper/assets/images/banner.svg)
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
-[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
-[![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
-[![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
+[![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper) [![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper) [![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper) [![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
-![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper&logoColor=white)
-![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript\&logoColor=white) ![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper\&logoColor=white) ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
 
 ## About 🔥
 
@@ -53,6 +48,7 @@ export default App;
 [https://a51.dev/tests/](https://a51.dev/tests/)
 
 You can see an HTML version where dpHelper and LayerPro work together seamlessly. dpHelper is compatible with a variety of frontend libraries, including:
+
 * HTML
 * React
 * Vue
@@ -61,10 +57,11 @@ You can see an HTML version where dpHelper and LayerPro work together seamlessly
 ## Documentation
 
 You can see:
-- [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
-- [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
-- [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
-- [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/tools)
+
+* [State](https://passariello.gitbook.io/dphelper-devtools/general/state)
+* [Store](https://passariello.gitbook.io/dphelper-devtools/general/store)
+* [Observer](https://passariello.gitbook.io/dphelper-devtools/general/observer)
+* [List of functions](https://passariello.gitbook.io/dphelper-devtools/general/tools)
 
 You can see more tutorials, information, and examples about **dpHelper** [clicking here](https://passariello.gitbook.io/dphelper-devtools).
 
@@ -196,9 +193,7 @@ When using dpHelper for permanent storage, you should use the **store**, which s
 #### Important Security Note
 
 1. **Use store for persistent storage:** If you want to store data permanently, use store to ensure it is saved in localStorage.
-
 2. **Remove data when necessary:** To maintain security, remove stored data when it is no longer needed, such as during logout.
-
 3. **Clear all stored data:** Use store.clearAll() to securely remove all stored data from your application.
 
 ```javascript
@@ -289,13 +284,12 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 ## License
 
-[MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
-
+[MIT - https://en.wikipedia.org/wiki/MIT\_License](https://en.wikipedia.org/wiki/MIT_License)
 - [LICENCE](https://passariello.gitbook.io/dphelper-devtools/general/license)
 - [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/general/code_of_conduct)
 - [SECURITY](https://passariello.gitbook.io/dphelper-devtools/general/security)
 - [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/general/contributing)
 
----
+***
 
 Dario Passariello - dariopassariello@gmail.com, All rights reserved - Copyright (c) 2019 - 2024
