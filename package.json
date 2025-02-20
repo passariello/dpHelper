@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.8.70",
+  "version": "1.8.75",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -151,8 +151,8 @@
     "types/*"
   ],
   "scripts": {
-    "watch": "webpack --watch --progress --color --mode=development --config webpack.ts",
-    "make-dist": "webpack --progress --color --mode=production --config webpack.ts",
+    "watch": "webpack --watch --progress --profile --color --mode=development --config webpack.ts",
+    "build": "webpack --progress --profile --color --mode=production --config webpack.ts",
     "-": "--------------",
     "git": "git push -f -u && git add . && git commit -m \"update\" && git pull && git push -f",
     "--": "-------------",
