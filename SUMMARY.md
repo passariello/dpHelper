@@ -4,9 +4,9 @@
 
 ## General
 
-* [Store](/documents/STORE.md)
 * [State](/documents/STATE.md)
 * [Observer](/documents/OBSERVER.md)
+* [Store](/documents/STORE.md)
 * [All Functions](/documents/TOOLS.md)
 
 ## documents
