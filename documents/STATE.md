@@ -3,10 +3,6 @@
 ## Overview
 This document provides a comprehensive list of all available state functions in the `dphelper` library along with their descriptions and examples.
 
-### News :)
-Now if you try to override the root state you get a message error!
-Also, now you can lock a state using example: __state.[stateName].lock()__
-
 ## Functions
 
 ### state.[state.name] ex: _state.test_
@@ -39,12 +35,24 @@ Also, now you can lock a state using example: __state.[stateName].lock()__
 ### state.name.lock()
 
 >>> New option!
-- **Description:** Lock a state.
+- **Description:** Lock a state (only for types: Array, Object).
 - **Example:**
   ```javascript
   state.name = {test:"test"}
   state.name.lock();
   "Now you can't add more data or remove it"
+  ```
+
+### state.removeAll()
+
+>>> New option!
+- **Description:** Remove all states.
+- **Example:**
+  ```javascript
+  state.name = {test:"test"}
+  state.removeAll();
+  "Now you can't see state.name (all states are removed)"
+  "Use for Log-out / Sign-out operation"
   ```
 
 ## License

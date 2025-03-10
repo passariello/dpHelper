@@ -116,16 +116,25 @@ You can use the browser's devtools console and type " **state.test = 'I am ready
 
 ```javascript
 // Set a state
-state.test = "I am ready";
+state.test = "I am ready" *
 
 // Get the state
-state.test
+state.test *
 
 // List all states
 state.list // or just "state" to see the proxy
 
+// Lock a state from edit (Only for Objects or Array)
+state.test.lock() *
+
 // Remove a state
 state.remove("test")
+
+// Remove all states
+state.removeAll()
+
+*["test" is only an example]
+
 ```
 
 ### Observer 😎 for States

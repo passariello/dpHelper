@@ -1,6 +1,6 @@
 {
   "name": "dphelper",
-  "version": "1.8.82",
+  "version": "1.8.90",
   "description": "dphelper devtools | tools, store and state management for developers by Dario Passariello",
   "copyright": "Dario Passariello",
   "license": "MIT",
@@ -174,7 +174,7 @@
     "dotenv": "16.4.7",
     "file-loader": "6.2.0",
     "jquery": "3.7.1",
-    "terser-webpack-plugin": "^5.3.13",
+    "terser-webpack-plugin": "^5.3.14",
     "ts-loader": "^9.5.2",
     "ts-node": "10.9.2",
     "typescript": "5.8.2",
