@@ -141,8 +141,6 @@ state.removeAll()
 
 **Note**: _Observer works only with states. Stores are excluded at the moment._
 
-🔥NEW🔥: Great, now you can use nested objects in observer. You need to declare "state." or "store." before selecting the object you want to monitor.
-
 If you want to run a function every time a state changes, you can use:
 
 ```javascript
@@ -208,7 +206,7 @@ When using dpHelper for permanent storage, you should use the **store**, which s
 
 2. **Remove data when necessary:** To maintain security, remove stored data when it is no longer needed, such as during logout.
 
-3. **Clear all stored data:** Use store.clearAll() to securely remove all stored data from your application.
+3. **Remove all stored data:** Use store.removeAll() to securely remove all stored data from your application.
 
 ```javascript
 // Set a store:
@@ -218,10 +216,10 @@ store.set("test", { test: "test" })
 store.get("test") // Output: { test: "test" }
 
 // Remove a store:
-store.delete("test") // Output: "ok"
+store.remove("test") // Output: "ok"
 
 // Remove all stores:
-store.clearAll() // Output: "ok"
+store.removeAll() // Output: "ok"
 ```
 
 ### Example in React
@@ -249,8 +247,8 @@ function App() {
     }, []
   );
 
-  // Clear all stored data if necessary
-  // store.clearAll();
+  // Remove all stored data if necessary
+  // store.removeAll();
 
   return (
     <div>
@@ -278,7 +276,7 @@ Chrome: [Download from Google Web Store](https://chrome.google.com/webstore/deta
 
 Edge: [Download from Microsoft Addons](https://microsoftedge.microsoft.com/addons/detail/dphelper-manager-dev-to/kphabkbdpaljlfagldhojilhfammepnk)
 
-PS: **dpHelper** is compatible with all Chromium-based browsers like **Brave** too!
+PS: **dpHelper** is compatible with all Chromium-based browsers like **Edge or Brave**!
 
 ## dpHelper Browser Extension
 
@@ -300,10 +298,10 @@ The dpHelper browser extension allows you to manage your application's dpHelper 
 
 [MIT - https://en.wikipedia.org/wiki/MIT_License](https://en.wikipedia.org/wiki/MIT_License)
 
-- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/general/license)
-- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/general/code_of_conduct)
-- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/general/security)
-- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/general/contributing)
+- [LICENCE](https://passariello.gitbook.io/dphelper-devtools/documents/license)
+- [CODE OF CONDUCT](https://passariello.gitbook.io/dphelper-devtools/documents/code_of_conduct)
+- [SECURITY](https://passariello.gitbook.io/dphelper-devtools/documents/security)
+- [CONTRIBUTING](https://passariello.gitbook.io/dphelper-devtools/documents/contributing)
 
 ---
 

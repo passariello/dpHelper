@@ -102,7 +102,7 @@ interface _dphelper {
     }) => any
     get: (name: string) => any
     delete: (name: string) => any
-    clearAll: () => any
+    removeAll: () => any
   }
 
   coords: {

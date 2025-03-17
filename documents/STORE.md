@@ -25,21 +25,21 @@ This document provides a comprehensive list of all available store functions in 
   store.set('itemName', value);
   ```
 
-### store.delete([store.name])
+### store.remove([store.name])
 - **Description:** Delete an item from local storage.
 - **Parameters:**
   - `name` (string): The name of the item to delete.
 - **Example:**
   ```javascript
-  store.delete('itemName');
+  store.remove('itemName');
   ```
 
-### store.clearAll()
-- **Description:** Clear all items from local storage.
+### store.removeAll()
+- **Description:** Remove all items from local storage.
 - **Parameters:** None
 - **Example:**
   ```javascript
-  store.clearAll();
+  store.removeAll();
   ```
 
 ### store.quota()

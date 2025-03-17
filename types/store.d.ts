@@ -39,23 +39,27 @@ interface _store {
     *
     * @example
     * store.delete("test")
+    * store.remove("test")
     *
     * @since dphelper 0.0.1
     * @param name The String as name to define the store.
     * @return boolean
   */
   delete: (name: string) => boolean | undefined
+  remove: (name: string) => boolean | undefined
 
   /**
     * Delete all storages
     *
     * @example
     * store.clearAll()
+    * store.removeAll()
     *
     * @since dphelper 0.0.1
     * @return boolean
   */
   clearAll: () => boolean
+  removeAll: () => boolean
 
   /**
     * Know how much space you have for total storages

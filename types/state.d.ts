@@ -40,6 +40,17 @@ interface _state {
    * List all states using: state.list
    *
    * @example
+   * state.removeAll()
+   *
+   * @since dphelper 1.8.92
+   * @return Remove all states.
+   */
+  readonly removeAll?: () => any
+
+  /**
+   * List all states using: state.list
+   *
+   * @example
    * state.list
    *
    * @since dphelper 0.0.1
