@@ -5,13 +5,16 @@
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
 [![version](https://img.shields.io/npm/v/dphelper.svg)](https://npmjs.org/package/dphelper)
-[![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
-[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
 [![downloads](https://img.shields.io/npm/dm/dphelper.svg)](https://npmjs.org/package/dphelper)
-
 ![TypeScript](https://img.shields.io/badge/TypeScript-006b98?logo=TypeScript&logoColor=white)
+
 ![dphelper](https://img.shields.io/badge/dphelper-npm-green?logo=dphelper&logoColor=white)
 ![browser extension](https://img.shields.io/badge/browser%20extension-beta-orange.svg)
+
+<!--
+[![dphelper](https://snyk.io/advisor/npm-package/dphelper/badge.svg)](https://snyk.io/advisor/npm-package/dphelper)
+[![Socket Badge](https://socket.dev/api/badge/npm/package/dphelper)](https://socket.dev/npm/package/dphelper)
+-->
 
 ## About 🔥
 
@@ -99,7 +102,7 @@ require("dphelper");
 Note: You don't need to use npm install in this case, or you will get an error.
 
 ```html
-<script src="https://unpkg.com/dphelper@latest/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/layerpro@latest@latest/index.js"></script>
 ```
 
 ## The Best Way To Use State 💥
