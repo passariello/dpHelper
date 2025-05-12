@@ -1,6 +1,6 @@
 ## Changelog
 
-![dphelper](https://raw.githubusercontent.com/passariello/container/05dc9ccd34096f123f36a4102177695dcb8040bb/dphelper/assets/logos/logo.svg)
+![dphelper](https://raw.githubusercontent.com/passariello/container/refs/heads/main/dphelper/assets/logos/logo.svg)
 
 New minor (feature) releases of this app/software are released every six months and
 patch (bugfix) releases are released every month. More information on the

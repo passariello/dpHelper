@@ -1,6 +1,6 @@
 # dpHelper
 
-![dpHelper](https://raw.githubusercontent.com/passariello/container/92b999bad3a5e68d6e6ec800c3974383dba16244/dphelper/assets/images/banner.svg)
+![dpHelper](https://raw.githubusercontent.com/passariello/container/refs/heads/main/dphelper/assets/images/banner.svg)
 
 **Manager | DevTools** by [Dario Passariello](https://dario.passariello.ca) (c)
 
