@@ -206,13 +206,13 @@ interface _dphelper {
   }
 
   load: {
-    all: (context: __WebpackModuleApi.RequireContext, cacheName?: string) => void
+    all: (context, cacheName?: string) => void
     file: (filePath: string) => Promise<string>
     fileToElement: (elementSelector: string, filePath: string) => Promise<void>
     json: (filePath: string) => Promise<any>
     remote: (path: string, method?: string, headers?: HeadersInit) => Promise<any>
     script: (scripts: string[], elementSelector?: string) => void
-    toJson: (context: __WebpackModuleApi.RequireContext, cacheName?: string) => void
+    toJson: (context, cacheName?: string) => void
   }
 
   logging: {
@@ -326,7 +326,7 @@ interface _dphelper {
     open: (id: any, server: any, name: string) => void
     send: (mex: any, type?: string) => void
     ping: (name: string) => void
-    receive: (el?: any, name: string) => void
+    receive: (el?: any, name?: string) => void
     keepAlive: (name: string) => void
     check: () => void
     list: () => WebSocket[]
@@ -343,7 +343,7 @@ interface _dphelper {
     makeScrollable: (svgContainer: HTMLElement, scrollContainer: HTMLElement, elm1: HTMLElement, elm2: HTMLElement, rect1: HTMLElement, rect2: HTMLElement) => void
     makeDraggable: (evt: Event) => void
     toggle: (evt: Event, container: HTMLElement, source1: HTMLElement, source2: HTMLElement) => void
-    convert: (options: ConvertOptions) => string | void
+    convert: (options) => string | void
   }
 
   system: {

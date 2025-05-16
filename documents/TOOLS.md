@@ -476,7 +476,7 @@ This document provides a comprehensive list of all available functions in the `d
   <br> Makes an SVG element draggable.
 - `dphelper.svg.toggle(evt, container, source1, source2)`
   <br> Toggles an SVG element.
-- `dphelper.svg.convert(options: ConvertOptions)`
+- `dphelper.svg.convert(options)`
   <br> Converts an SVG element.
 
 ### System

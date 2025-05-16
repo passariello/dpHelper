@@ -29,7 +29,7 @@ dpHelper is a precise and complete collection of 190+ tools ready to use in all 
 ### Example in React
 
 ```javascript
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import 'dphelper';
 
   function App() {
@@ -228,7 +228,7 @@ store.removeAll() // Output: "ok"
 ### Example in React
 
 ```javascript
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import 'dphelper';
 
 function App() {
